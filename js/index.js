@@ -1,5 +1,8 @@
 const currentDate = new Date();
-document.querySelector('#year').textContent = currentDate.getFullYear();
+const year = currentDate.getFullYear();
 
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: "numeric", minute: "numeric", second: "numeric"};
-document.querySelector('#lastUpdated').textContent = new Date().toLocaleDateString('en-UK', options);
+const today = new Date().toLocaleDateString('en-UK', options);
+document.querySelector('#lastUpdated').textContent = `Last Updated: ${today}`;
+
+document.querySelector('#copyRight').textContent = `\u00A9 ${year} | Landon Carter | Utah`;
