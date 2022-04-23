@@ -39,6 +39,7 @@ ul {
     padding: 1rem;
     border-bottom: rgb(231, 156, 171) solid;
     border-top: rgb(231, 156, 171) solid; 
+    margin-bottom: .5rem;;
 }
 footer {
     display: grid;
