@@ -19,16 +19,20 @@ header, main, footer {
 header {
     margin: 1rem auto;
     border: 1px solid #bbb;
-    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background-color: rgb(156, 231, 196);
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     border-radius: 1rem;
 }
 
 header img {
     margin: 0 auto;
+    border-radius: 5rem;
 }
 
 ul {
@@ -44,7 +48,7 @@ footer {
     padding: .5rem;
     background-color: rgb(156, 231, 196);
     text-align: center;
-    text-align: justify;
+    text-align: justify;padding-left: 2rem;
     justify-content: center;
     border-radius: 1rem;
     white-space: normal;
