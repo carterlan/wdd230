@@ -16,12 +16,13 @@ header, main, footer {
 }
 
 header, footer {
-    background-color: rgb(26, 29, 75);
+    background-color: #000776;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;  
     padding: 5px;
 }
+
 section {
     margin: 8px;
     outline: black thin solid;
@@ -38,7 +39,7 @@ h2 {
 }
 h3 {
     padding: .5em;
-    background-color: rgb(41, 29, 97);
+    background-color: #536878;
     border-top-right-radius: .7em;
     border-top-left-radius: .7em;
 }
