@@ -57,7 +57,7 @@ p {
 }
 img {
     display: block;
-    margin: 4px;
+    margin: .2em;
     justify-items: center;
     outline: black thin solid;
 }
