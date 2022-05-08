@@ -1,0 +1,24 @@
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+    table {
+        width: 100%;
+        border: thick double #32a1ce;
+        border-width: 10px;
+        border-radius: 1em;
+    }
+	main picture {
+		display: block;
+	}
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
