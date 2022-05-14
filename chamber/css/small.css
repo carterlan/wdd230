@@ -1,0 +1,98 @@
+/* Small/Phone View ***************/
+
+body {
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+header,
+footer {
+    margin: 0;
+	background-color: #dda8b5;
+	display: grid;
+    text-align: center;
+}
+#title {
+    font-size: 1em;
+}
+#today {
+    margin: .5em;
+    padding: .3em;
+    background-color: #c9e4d9;
+    border-radius:  .25em;
+}
+
+.social {
+    padding: 10px;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: '\2630';;
+}
+
+main div {
+    margin: 1em;
+    margin-left: 2px;
+    background-color: #c9e4d9;
+    border-radius: .3em;
+    padding-bottom: 7em;
+}
+
+#spotlights {
+    display: grid;
+    padding-bottom: 0;
+    
+}
+#spotLight1, #spotLight2, #spotLight3 {
+    border-style: solid;
+    border-radius: .3em;
+    padding: 5px;
+    margin: 5px;
+    padding-bottom: 7em;   
+}
+#spotLight3 {
+    display: none;
+}
+#join {
+    display: none;
+}
+#copyRight {
+    margin: .3em;
+    border-top-style: solid;
+}
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+
+.responsive li {
+	display: block; 
+}
+
+.responsive a.ham::before {
+	content: "❌ ";
+}
+
