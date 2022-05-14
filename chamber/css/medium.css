@@ -3,7 +3,10 @@
         display: grid;
         grid-template-columns: 35em;
     }
-
+    header div {
+        display:flex;
+        justify-content: space-around;
+    }  
     #hero {
         grid-column: 1 / span 2;
     }
@@ -21,7 +24,7 @@
     }
     #spotLight1, #spotLight2 {
         grid-row: 1;
-        
+
     }
     
     #join {
