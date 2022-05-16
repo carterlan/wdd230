@@ -1,13 +1,20 @@
 @media only screen and (min-width: 57em){
 
     header div {
-        display:flex;
-        justify-content: space-around;
+        display:grid;
+        grid-template-columns: .1fr .6fr 1fr .07fr .08fr;
     }    
-    
+    #logo {
+        margin: 1em;
+        margin-bottom: 0;
+    }
     .social {
-        margin: 12px;
+        margin-top: 25px;
+        padding: 0;
         order: 1;
+    }
+    #title {
+        margin-top: 25px;
     }
     .navigation {
 		display: flex;

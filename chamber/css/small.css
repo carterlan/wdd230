@@ -69,6 +69,8 @@ main div {
 #spotlights {
     display: grid;
     padding-bottom: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     
 }
 #spotLight1, #spotLight2, #spotLight3 {
@@ -84,7 +86,13 @@ main div {
 #join {
     display: none;
 }
-#copyRight {
+footer {
+    grid-template-columns: 1fr;
+}
+footer div {
+    display: grid;
+}
+#bottomfooter {
     margin: .3em;
     border-top-style: solid;
 }

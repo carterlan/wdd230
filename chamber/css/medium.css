@@ -1,7 +1,7 @@
 @media only screen and (min-width: 28em) {
 	main {
         display: grid;
-        grid-template-columns: 35em;
+        grid-template-columns: 1fr .5fr;
     }
     header div {
         display:flex;
@@ -24,20 +24,17 @@
     }
     #spotLight1, #spotLight2 {
         grid-row: 1;
-
     }
     
     #join {
-        display: block;
+        display: flex;
         grid-column: 1 / span 2;
         grid-row: 4;
     }
-    #event, #weather {
-        grid-row: 5;
-    }
 
     footer {
-        grid-template-columns: 10em 1.5fr 1fr;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
     }
     #footerlogo {
         grid-row: 1 / span 3;
@@ -54,9 +51,12 @@
     }
     #location, #phonenumber {
         grid-column: 3;
+    }   
+    #contactinfo {
+        display: flex;
+        flex-direction: column;
     }
-
-    #copyRight, #lastUpdated {
+    #bottomfooter {
         grid-column: 1 / span 3;
     }
 }
