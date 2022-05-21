@@ -66,6 +66,17 @@ div {
 	content: '\2630';;
 }
 
+#banner {
+    display: none;
+    border-style: solid;
+    margin: auto;
+    margin-bottom: .4em;
+    padding: .2em;
+    width: 50%;
+    border-radius: 1em; 
+    background-color: #dbecf4;
+}
+
 main div {
     margin: 1em;
     margin-left: 2px;
