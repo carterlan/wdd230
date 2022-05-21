@@ -24,6 +24,6 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 let d = new Date();
 
 const banner = document.getElementById("banner");
-if (d.getDay() == 6) {
+if (d.getDay() == 2) {
     banner.style.display = "block";
 }
