@@ -44,36 +44,61 @@
     </header>
 
     <main>
-        <div id="hero">
-            <h3>Hero with site name and call to action</h3>    
+        <div id="hero">   
+                <picture>
+                    <img src="images/heroimg.jpeg" alt="Hero Image">
+                </picture>
+                <section class="heroSection">
+                    <h2>Spanish Fork Chamber of Commerce</h2>
+                    <p><span id="name">The best place to live and work</span></p>
+                </section>
+                <!--<button type="submit" id="add">Join the Chamber</button>-->
         </div>
         
         <div id="event">
-            <h3>Event</h3>    
+            <h3>Event: Ribbon Cutting - Paperback Book Exchange</h3>    
+            <p>Join us in celebrating the relocation of the Paperback Book Exchange
+                <br>245 S Main St. Spanish Fork
+                <br>Hot Dog Lunches & Cake will be provided, take your lunchbreak and see you there.<button class="more">Learn more. . .</button>
+            </p>
+            
         </div>
         
-        <div id="weather">
-            <h3>Weather</h3>    
+        <div class="weatherWidget" >
+            <h3>Weather</h3>
+            <img src="images/weatherIcon.png" alt="Weather"> 
         </div>
         
         <div id="news">
-            <h3>News Release</h3>    
+            <h3>News Release</h3>  
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maiores similique dignissimos error accusantium. Exercitationem laborum iste fugiat necessitatibus excepturi doloremque, porro blanditiis eveniet nesciunt, repellendus quaerat, non reprehenderit libero voluptatum at mollitia maiores nemo minima in. Sunt repellat, voluptatibus debitis recusandae veritatis deserunt consequatur ut magnam assumenda dolore asperiores aspernatur, vitae, enim esse omnis molestiae. Corrupti qui eos itaque, quidem dolore dolorum quo, eius, minima provident esse tenetur voluptates asperiores rem. At, veritatis nemo cumque mollitia dolorem quas necessitatibus quibusdam beatae earum cum dignissimos est voluptatibus ratione sint natus eligendi magni voluptate nostrum atque quia nisi eius perspiciatis quo.</p>  
         </div>
 
         <div id="spotlights">
+            
             <section id="spotLight1">
-                <h3>Spotlight 1</h3>    
+                <h3>Hawaiian Foodie</h3> 
+                <img src="images/mobetta.png" alt="Hawaiian Foodie"> 
+                <h5>Best food in Town!</h5> 
+                <p>910 N Main St.<br> <a href = https://mobettahs.com/>Hawaiian Food</a></p> 
             </section>
             <section id="spotLight2">
-                <h3>Spotlight 2</h3>    
+                <h3>High Quality Threads</h3> 
+                <img src="images/clothstore.png" alt="High Quality Threads">   
+                <h5>High Quality clothes for the Whole Family</h5>
+                <p>1307 N Canyon Creek PKWY<br> <a href = https://oldnavy.gap.com/>H.Q.T.</a></p> 
             </section>
             <section id="spotLight3">
-                <h3>Spotlight 3</h3>    
+                <h3>Family Dental</h3>
+                <img src="images/cascade.png" alt="Family Dental">
+                <h5>All your dental needs solved</h5>
+                <p>1265 N Canyon Creek Parkway<br> <a href = https://cascadefamily.com/>Family Dental</a></p>
             </section>
         </div>
 
         <div id="join">
-            <h3>Join</h3>    
+            <button style="height: 36px;">Join Us</button>    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis veritatis molestias cum, consequatur temporibus ab? Eos iusto minus pariatur.</p>
         </div>
 
         
@@ -108,5 +133,26 @@
 </body>
 
 <script src="js/index.js"></script>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/spanish%20fork%2C%20utah?unitGroup=metric&include=days&key=R54T2DPLTXAJM5EUSDCHG8WQC&contentType=json",
+       location:"Spanish Fork, UT", //Enter an address
+       unitGroup:"metric", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"Spanish Fork, US", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
 
 </html>

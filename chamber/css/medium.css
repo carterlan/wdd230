@@ -4,7 +4,6 @@
         grid-template-columns: 1fr .5fr;
     }
     header div {
-        display:flex;
         justify-content: space-around;
     }  
     #hero {
@@ -27,7 +26,7 @@
     }
     
     #join {
-        display: flex;
+        display: grid;
         grid-column: 1 / span 2;
         grid-row: 4;
     }
