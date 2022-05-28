@@ -1,7 +1,7 @@
 @media only screen and (min-width: 28em) {
 	main {
         display: grid;
-        grid-template-columns: 1fr .5fr;
+        grid-template-columns: 1fr 1fr;
     }
     header div {
         justify-content: space-around;

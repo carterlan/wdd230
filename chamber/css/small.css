@@ -4,6 +4,11 @@ body {
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
 
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+
 header,
 footer {
     margin: 0;
@@ -79,7 +84,6 @@ div {
 
 main div {
     margin: 1em;
-    margin-left: 2px;
     background-color: #c9e4d9;
     border-radius: .3em;
 }
@@ -94,29 +98,50 @@ main div {
 
 #spotlights section p {
     border-top-style: solid;
+    padding-top: 1em;
 }
+
 #spotLight1, #spotLight2, #spotLight3 {
     border-style: solid;
     border-radius: .3em;
     padding: 5px;
     margin: 5px;
 }
+
 #spotLight3 {
     display: none;
 }
+
+.weatherWidget h4 {
+    margin: .3em;
+    border-bottom-style: solid;
+}
+
+#temp {
+    font-size: 4.5em;
+}
+
+#unit {
+    font-size: 3em;
+}
+
 #join {
     display: none;
 }
+
 footer {
     grid-template-columns: 1fr;
 }
+
 footer div {
     display: grid;
 }
+
 #bottomfooter {
     margin: .3em;
     border-top-style: solid;
 }
+
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */
@@ -143,8 +168,8 @@ footer div {
 
 .heroSection {
 	position: absolute;
-	top: 25px;
-	left: 25px;
+	bottom: 25px;
+	right: 25px;
 	background: radial-gradient(#c9e4d9 ,#dbecf4 );
 	border: 1px solid #000;
 	padding: 1.5rem;
