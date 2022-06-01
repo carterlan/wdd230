@@ -22,7 +22,7 @@ let currentVisit = Number(Date.now());
 
 if (lastVisit !== 0) {
     //Get the stored value for the last visit
-    timeBtnVst = Math.round((currentVisit - lastVisit) / 1.15741e8);
+    timeBtnVst = Math.round((currentVisit - lastVisit) / 8.64e7);
     timeBtnVstDisplay.textContent = `${timeBtnVst} day(s)`;
 } else {  
     timeBtnVstDisplay.textContent = `N/A`;  
