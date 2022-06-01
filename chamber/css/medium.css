@@ -58,4 +58,32 @@
     #bottomfooter {
         grid-column: 1 / span 3;
     }
+
+    /* Discover Page Enhancements*/
+    .demo {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+    }
+
+    #population {
+        grid-row: 2;
+    }
+    #education {
+        grid-row: 3;
+    }
+
+    #race {
+        grid-row: 4;
+    }
+
+    #income {
+        grid-row: 5;
+    }
+    .demo div picture img {
+        width: 95%;
+        
+    }
+    .demo div picture img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

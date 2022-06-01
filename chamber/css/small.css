@@ -203,3 +203,21 @@ button:hover {
     border: none;
     left: 0%
 }
+
+/* Discover Page Enhancements*/
+.demo div picture img {
+    width: 20em;
+    border-radius: 1em;
+    padding: .5em;
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+.sidepics p {
+    font-size: 1.3em;
+}
+
+.demo div picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
