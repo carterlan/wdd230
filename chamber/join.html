@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Fork Chamber of Commerce</title>
+    <meta name = "description" content="Assignment 4(Home Page) for Landon Carter in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body> 
+    <header>
+        <div>
+        <picture id="logo" class="home">
+             <img src="images/coclogo_optized.webp" alt="COC LOGO" width=64px height=64px>
+        </picture>
+        
+        <h1 id = "title" class="home"> Spanish Fork <br>Chamber of Commerce</h1>
+        <picture id="facebookIcon" class="social home">
+            <a href="https://www.facebook.com"><img src="images/facebookIcon.png" alt="Facebook LOGO" width=30px height=30px></a>
+       </picture>
+       <picture class="social home">
+            <a href="https://www.linkedin.com"><img src="images/linkedinIcon.png" alt="Linkedin LOGO" width=30px height=30px></a>
+        </picture>
+        
+        <nav class="home">
+            <ul class="navigation">
+                <li><a class="ham" href="#"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <span id="today"></span>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Join the Chamber of Commerce</legend>
+                <label class="top">First Name* <input type="text" name="fname" required placeholder="Enter your first name"></label>
+                <label class="top">Last Name* <input type="text" name="lname" required placeholder="Enter your last name" ></label>
+		        <label class="top">Business: 
+                    <input type="text" name="bfield" 
+                    pattern="[a-z -].{6,}"
+                    title="This field only accepts alpha characters, hyphens, and spaces with a minimum of seven characters"
+                    placeholder="Enter your Business Field" /></label>
+                <label class="top">Email* <input type="email" name="email" required placeholder="Enter your Email" ></label>
+                <label class="top">Phone Number* <input type="tel" name="phonenumber" required placeholder="Enter your Phone Number" ></label>
+                <label class="top">Business Name*<input type="text" name="businessname" required placeholder="Enter your Business Name" ></label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Membership Level</legend>
+                <label class="sbs"><input type="radio" name="membership" value="yes"> Nonprofit Membership: $0.00</label>
+                <label class="sbs"><input type="radio" name="membership" value="yes"> Bronze Membership: $50.00</label>
+                <label class="sbs"><input type="radio" name="membership" value="yes"> Silver Membership: $150.00</label>
+                <label class="sbs"><input type="radio" name="membership" value="yes"> Gold Membership: $250.00</label>
+            </fieldset>
+            <fieldset>
+                <legend>Discribe your Business</legend>
+                <label  class="top"><textarea name="business" id="business" cols=40 rows="10"></textarea></label>
+            </fieldset>
+            <label><button id="btnSubmit" type="submit">Send Message</button></label>
+		    <label><input type="hidden" name="dateTime" id="dateTime" value=""></label>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+        <picture id="footerlogo" >
+            <img src="images/coclogo_optized.webp" alt="COC LOGO" width=30% height=auto>
+        </picture>
+        </div>
+
+        <div>
+        <h3 id="name">Spanish Fork Chamber of Commerce</h3>
+        <p id="address">28 Main, Spanish Fork, Utah</p>
+        </div>
+
+        <div id="contactinfo">
+        <p>info@SFCoC.org</p>
+        <p id ="phonenumber">(801) 400-1010</p>
+        <p id ="location"><picture ><img src="images/pinIcon.png" alt="COC LOGO" width=15% height=auto></picture>Map Location</p>
+        </div>
+        <div id="bottomfooter">
+        <span id="copyRight"></span>   
+        <span id="lastUpdated"></span>   
+        </div>  
+    </footer> 
+    
+</body>
+
+<script src="js/index.js"></script>
+
+
+</html>

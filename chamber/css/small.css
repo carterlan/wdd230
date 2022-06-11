@@ -225,3 +225,68 @@ button:hover {
     list-style: none;
     font-size: 1.5em;
 }
+
+/*   Forms    */
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #f2856d;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #c9e4d9;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+
+
+    padding:.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background: radial-gradient(#c9e4d9 ,#dbecf4 );
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+#btnSubmit {
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2%;
+    width: 96%;
+    position: static;
+}
+
+form label.top input:required {
+    border-left: #cc5472 solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #239165 solid 6px;
+}
+
+#thankyou img {
+    display: block;
+    margin:  4px 4px 4px 4px;
+    width: 98%;
+    object-fit: contain;
+}

@@ -27,3 +27,7 @@ const banner = document.getElementById("banner");
 if (d.getDay() == 2) {
     banner.style.display = "block";
 }
+
+//Hidden date submit for Join page form
+dateTime = document.getElementById("dateTime");
+dateTime = currentDate;

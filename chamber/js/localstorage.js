@@ -7,7 +7,7 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+	visitsDisplay.textContent = ` ${numVisits}`;
 } else {
 	visitsDisplay.textContent = `This is your first visit!`;
 }
@@ -23,7 +23,7 @@ let currentVisit = Number(Date.now());
 if (lastVisit !== 0) {
     //Get the stored value for the last visit
     timeBtnVst = Math.round((currentVisit - lastVisit) / 8.64e7);
-    timeBtnVstDisplay.textContent = `${timeBtnVst} day(s)`;
+    timeBtnVstDisplay.textContent = ` ${timeBtnVst} day(s)`;
 } else {  
     timeBtnVstDisplay.textContent = `N/A`;  
 }
