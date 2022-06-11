@@ -63,14 +63,12 @@
     #spotLight2 {
         grid-row: 2;
     }
-
+  /* Forms*/
     #spotLight3 {
         display: block;
         grid-row: 3;
     }
-
-
-    #spotLight1, #spotLight2, #spotLight3 {
-       
+    form {
+        grid-column: 2;
     }
 }
