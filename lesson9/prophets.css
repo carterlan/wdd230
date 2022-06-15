@@ -1,6 +1,6 @@
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin: 1em;
     padding: 1em;
     box-shadow: 0 0 30px #777;
@@ -28,5 +28,5 @@
   }
   h2 {
     color: rgb(81,81,151);
-    font-size: 2em;
+    font-size: 1.6em;
   }
