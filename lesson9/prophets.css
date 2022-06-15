@@ -1,0 +1,32 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 30px #777;
+    background-color: rgb(221, 221, 221);
+  }
+  img {
+    width: auto;
+      max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+  }
+  header {
+    text-align: center;
+    font-size: 20px;
+  }
+  section {
+    text-align: center;
+    background-color: rgb(185,185,204);
+    margin: .3em;
+  }
+  h1 {
+    color: rgb(81,81,151);
+    font-size: 3.5em;
+  }
+  h2 {
+    color: rgb(81,81,151);
+    font-size: 2em;
+  }
