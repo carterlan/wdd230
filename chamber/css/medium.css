@@ -85,4 +85,11 @@
     .demo div picture img:hover {
         box-shadow: 0 0 50px #333;
     }
+    /* Directory*/
+    .list .cards {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .list .cards section img {
+        display: flex;
+    }
 }

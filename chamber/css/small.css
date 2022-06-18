@@ -313,3 +313,28 @@ form label.top input:required:valid {
 #directory {
     text-align: center;
 }
+
+.list .cards section h4,.list .cards section img {
+    display: none;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}

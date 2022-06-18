@@ -71,9 +71,18 @@
     form {
         grid-column: 2;
     }
+
+    /*Directory*/
+
     .cards {
         background-color: white;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .list .cards {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .list .cards section h4 {
+        display: flex;
     }
 }
