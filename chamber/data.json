@@ -5,7 +5,7 @@
         "address": "910 N Main St",
         "phone": "(435)203-4455",
         "email": "help@hawaiianfoddie.com",
-        "website": "test",
+        "website": "https://mobettahs.com/",
         "memberlevel": "Gold",
         "imageurl": "https://carterlan.github.io/wdd230/chamber/images/mobetta.png"
       },
@@ -16,7 +16,7 @@
         "email": "help@HQT.com",
         "website": "https://github.com/carterlan/wdd230/blob/4d31821e4a5e9a392712ee219e5186c0f269fb5d/chamber/images/mobetta.png",
         "memberlevel": "Silver",
-        "imageurl": "https://github.com/carterlan/wdd230/blob/4d31821e4a5e9a392712ee219e5186c0f269fb5d/chamber/images/mobetta.png"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/clothstore.png"
       },
       {
         "name": "Family Dental",
@@ -25,7 +25,7 @@
         "email": "help@familydental.com",
         "website": "https://github.com/carterlan/wdd230/blob/4d31821e4a5e9a392712ee219e5186c0f269fb5d/chamber/images/mobetta.png",
         "memberlevel": "Bronze",
-        "imageurl": "https://github.com/carterlan/wdd230/blob/4d31821e4a5e9a392712ee219e5186c0f269fb5d/chamber/images/mobetta.png"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/cascade.png"
       },
       {
         "name": "Walmart",
@@ -34,7 +34,7 @@
         "email": "help@hwalmart.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Gold",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/walmart.png"
       },
       {
         "name": "In-N-Out",
@@ -43,7 +43,7 @@
         "email": "help@innout.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Bronze",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/innout.png"
       },
       {
         "name": "Chili's",
@@ -52,7 +52,7 @@
         "email": "help@chilis.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Non Profit",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/chilis.png"
       },
       {
         "name": "Sip-n",
@@ -61,7 +61,7 @@
         "email": "help@sipn.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Silver",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/sipn.png"
       },
       {
         "name": "Drywall Plus",
@@ -70,7 +70,7 @@
         "email": "help@drywallplus.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Bronze",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/drywallplus.png"
       },
       {
         "name": "Fizz",
@@ -79,7 +79,7 @@
         "email": "help@fizz.com",
         "website": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg",
         "memberlevel": "Gold",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/images/fizz.png"
       }
     ]
 }
