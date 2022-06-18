@@ -9,15 +9,15 @@ function displayMembers(member) {
     let address = document.createElement('h4');
     let phone = document.createElement('h4');
     let email = document.createElement('h4');
-    let a = document.createElement('a');
+    let website = document.createElement('h2');
     let memberlevel = document.createElement('h2');
     let logo = document.createElement('img');
 
     // Website creator
-    let website = document.createTextNode(`${member.website}`);
-    a.appendChild(website);
-    a.title = `Website: ${member.name}`;
-    a.href = member.website;
+    //let linktext = document.createTextNode(`${member.name}`);
+    //a.appendChild(linktext);
+    //a.title = `Website: ${member.name}`;
+    //a.href = `${member.website}`;
 
     // Change the textContent property to contain the member's full name, address, phone, email
     name.textContent = `${member.name}`;
