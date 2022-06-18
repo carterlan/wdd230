@@ -39,4 +39,3 @@ fetch(requestURL)
     const prophets = jsonObject['prophets'];
     prophets.forEach(displayProphets);
 });
-

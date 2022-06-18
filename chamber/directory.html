@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spanish Fork Chamber of Commerce</title>
-    <meta name = "description" content="Assignment 4(Home Page) for Landon Carter in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name = "description" content="Directroy Page: Landon Carter in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -44,34 +44,8 @@
     </header>
 
     <main>
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>Join the Chamber of Commerce</legend>
-                <label class="top">First Name* <input type="text" name="fname" required placeholder="Enter your first name"></label>
-                <label class="top">Last Name* <input type="text" name="lname" required placeholder="Enter your last name" ></label>
-		        <label class="top">Business: 
-                    <input type="text" name="bfield" 
-                    pattern="[a-z -].{6,}"
-                    title="This field only accepts alpha characters, hyphens, and spaces with a minimum of seven characters"
-                    placeholder="Enter your Business Field" /></label>
-                <label class="top">Email* <input type="email" name="email" required placeholder="Enter your Email" ></label>
-                <label class="top">Phone Number* <input type="tel" name="phonenumber" required placeholder="Enter your Phone Number" ></label>
-                <label class="top">Business Name*<input type="text" name="businessname" required placeholder="Enter your Business Name" ></label>
-            </fieldset>
-            <fieldset>
-                <legend>Select Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership" value="yes"> Nonprofit Membership: $0.00</label>
-                <label class="sbs"><input type="radio" name="membership" value="yes"> Bronze Membership: $50.00</label>
-                <label class="sbs"><input type="radio" name="membership" value="yes"> Silver Membership: $150.00</label>
-                <label class="sbs"><input type="radio" name="membership" value="yes"> Gold Membership: $250.00</label>
-            </fieldset>
-            <fieldset>
-                <legend>Discribe your Business</legend>
-                <label  class="top"><textarea name="business" id="business"></textarea></label>
-            </fieldset>
-            <label><button id="btnSubmit" type="submit">Send Message</button></label>
-		    <label><input type="hidden" name="dateTime" id="dateTime" value=""></label>
-        </form>
+        <h1>Directory</h1>
+        <div class="cards"></div>
     </main>
 
     <footer>
@@ -100,6 +74,7 @@
 </body>
 
 <script src="js/index.js"></script>
+<script src="js/directory.js"></script>
 
 
 </html>
