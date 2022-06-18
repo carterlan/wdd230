@@ -71,4 +71,9 @@
     form {
         grid-column: 2;
     }
+    .cards {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
 }

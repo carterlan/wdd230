@@ -296,3 +296,20 @@ form label.top input:required:valid {
     margin-left: .3rem;
     margin-top: .3rem;
 }
+/* Direcctory */
+.cards {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   
+}
+
+.cards section {
+   margin: .2em;
+   background-color: #c9e4d9;
+   border-radius: .3em;
+}
+
+#directory {
+    text-align: center;
+}

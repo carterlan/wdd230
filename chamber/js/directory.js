@@ -9,7 +9,7 @@ function displayMembers(member) {
     let address = document.createElement('h4');
     let phone = document.createElement('h4');
     let email = document.createElement('h4');
-    let website = document.createElement('h2');
+    let website = document.createElement('a');
     let memberlevel = document.createElement('h2');
     let logo = document.createElement('img');
 
@@ -24,9 +24,10 @@ function displayMembers(member) {
     address.textContent = `Address: ${member.address}`
     phone.textContent = `Phone Number: ${member.phone}`
     email.textContent = `Email: ${member.email}`
-    website.textContent = `${member.website}`
     memberlevel.textContent = `${member.memberlevel} Member`
-  
+    
+    website.href= member.website
+    website.textContent =(`${member.name}`)
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', member.imageurl);
     logo.setAttribute('alt', `Logo of ${member.name}`);
