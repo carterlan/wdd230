@@ -25,7 +25,6 @@ function displayMembers(member) {
     phone.textContent = `Phone Number: ${member.phone}`
     email.textContent = `Email: ${member.email}`
     memberlevel.textContent = `${member.memberlevel} Member`
-    
     website.href= member.website
     website.textContent =(`${member.name}`)
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
