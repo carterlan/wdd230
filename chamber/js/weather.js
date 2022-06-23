@@ -32,9 +32,13 @@ async function apiFetch() {
     const desc = weatherData.weather[0].description;
     windSpeed.innerHTML = weatherData.wind.speed;
 
+    //Create uppercase words for the description
+    const newDesc = desc.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
+    captionDesc.textContent = newDesc;
+
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    
   }
