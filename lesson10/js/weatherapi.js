@@ -3,8 +3,10 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
+// Call API
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
 
+// Create JSON from API
 async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -22,6 +24,7 @@ async function apiFetch() {
   
   apiFetch();
 
+  //Display Results from JSON
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   

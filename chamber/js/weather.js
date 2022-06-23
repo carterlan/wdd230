@@ -1,18 +1,40 @@
-window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-window.weatherWidgetConfig.push({
-    selector:".weatherWidget",
-    apiKey:"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/spanish%20fork%2C%20utah?unitGroup=metric&key=R54T2DPLTXAJM5EUSDCHG8WQC&contentType=json", //Sign up for your personal key
-    location:"London, UK", //Enter an address
-    unitGroup:"metric", //"us" or "metric"
-    forecastDays:1, //how many days forecast to show
-    title:"London,UK", //optional title to show in the 
-    showTitle:true, 
-    showConditions:true
-});
+// select HTML elements in the document
+const currentTemp = document.querySelector('#temp');
+const weatherIcon = document.querySelector('#weatherIcon');
+const captionDesc = document.querySelector('#weatherDiscription');
+const windSpeed = document.querySelector('#windSpeed');
 
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+
+// Call API
+//const url = `https://api.openweathermap.org/data/2.5/weather?q=Spanishfork&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
+//const url = `api.openweathermap.org/data/3.0/onecall?lat=40.1150&lon=-111.654922&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=40.1150&lon=-111.654922&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
+
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+  function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    const desc = weatherData.weather[0].description;
+    windSpeed.innerHTML = weatherData.wind.speed;
+
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+  }
