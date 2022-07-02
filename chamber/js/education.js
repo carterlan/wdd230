@@ -5,9 +5,9 @@ const cards = document.querySelector('.tables');
 function displayMembers(member) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    let race = document.createElement('h2');
-    let population= document.createElement('h4');
-    let percentage = document.createElement('h4');
+    let title = document.createElement('h2');
+    let field = document.createElement('h4');
+    let percent = document.createElement('h4');
 
     // Website creator
     //let linktext = document.createTextNode(`${member.name}`);
@@ -16,16 +16,16 @@ function displayMembers(member) {
     //a.href = `${member.website}`;
 
     // Change the textContent property to contain the member's full name, address, phone, email
-    race.textContent = `Race: ${member.Race}`;
-    population.textContent = `Population: ${member.Population}`
-    percentage.textContent = `Percentage: ${member.Percentage}`
+    title.textContent = `Race: ${member.title}`;
+    field.textContent = `Population: ${member.field}`
+    percent.textContent = `Percentage: ${member.percent}`
    
 
   
     // Add/append the section(card) with the h2 element
-    card.appendChild(race);
-    card.appendChild(population);
-    card.appendChild(percentage);
+    card.appendChild(title);
+    card.appendChild(field);
+    card.appendChild(percent);
   
   
     // Add/append the existing HTML div with the cards class with the section(card)
