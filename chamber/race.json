@@ -36,5 +36,40 @@
       "Population": 98,
       "Percentage": "0.0024"
     }
+    {
+      "title": "Less Than 9th Grade",
+      "field": 359,
+      "percent": "0.0172"
+    },
+    {
+      "title": "9th to 12th Grade",
+      "field": 864,
+      "percent": "0.0414"
+    },
+    {
+      "title": "High School Graduate",
+      "field": 4685,
+      "percent": "0.2246"
+    },
+    {
+      "title": "Some College",
+      "field": 5570,
+      "percent": "0.2671"
+    },
+    {
+      "title": "Associates Degree",
+      "field": 2116,
+      "percent": "0.1015"
+    },
+    {
+      "title": "Bachelors Degree",
+      "field": 5074,
+      "percent": "0.2433"
+    },
+    {
+      "title": "Graduate Degree",
+      "field": 2188,
+      "percent": "0.1049"
+    }
   ]
 }

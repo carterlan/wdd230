@@ -1,4 +1,4 @@
-const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/education.json';
+const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/race.json';
 const cards = document.querySelector('.tables');
 
 
@@ -17,8 +17,8 @@ function displayMembers(member) {
 
     // Change the textContent property to contain the member's full name, address, phone, email
     title.textContent = `Race: ${member.title}`;
-    field.textContent = `Population: ${member.field}`
-    percent.textContent = `Percentage: ${member.percent}`
+    field.textContent = `Population: ${member.field}`;
+    percent.textContent = `Percentage: ${member.percent}`;
    
 
   

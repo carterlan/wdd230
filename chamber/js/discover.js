@@ -6,7 +6,7 @@ function displayMembers(member) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let race = document.createElement('h2');
-    let population= document.createElement('h4');
+    let population = document.createElement('h4');
     let percentage = document.createElement('h4');
 
     // Website creator
@@ -17,9 +17,8 @@ function displayMembers(member) {
 
     // Change the textContent property to contain the member's full name, address, phone, email
     race.textContent = `Race: ${member.Race}`;
-    population.textContent = `Population: ${member.Population}`
-    percentage.textContent = `Percentage: ${member.Percentage}`
-   
+    population.textContent = `Population: ${member.Population}`;
+    percentage.textContent = `Percentage: ${member.Percentage}`;
 
   
     // Add/append the section(card) with the h2 element
@@ -37,7 +36,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    // console.table(jsonObject);  // temporary checking for valid response and data parsing
     const members = jsonObject['members'];
     members.forEach(displayMembers);
 });
