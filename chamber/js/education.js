@@ -1,5 +1,5 @@
-const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/race.json';
-const cards = document.querySelector('.cards');
+const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/education.json';
+const cards = document.querySelector('.tables');
 
 
 function displayMembers(member) {
@@ -29,7 +29,7 @@ function displayMembers(member) {
   
   
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.cards').appendChild(card);
+    document.querySelector('div.tables').appendChild(card);
 }
 
 fetch(requestURL)
@@ -44,4 +44,3 @@ fetch(requestURL)
 
 
 const display = document.querySelector("article");
-
