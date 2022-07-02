@@ -330,6 +330,7 @@ form label.top input:required:valid {
 
 
 .list section {
+
 	flex-direction: row;
 	justify-content: left;
 }
@@ -337,4 +338,8 @@ form label.top input:required:valid {
 .list section > * {
 	margin: 0 1rem;
 	text-align: left;
+}
+.list section h4, .list section h2 {
+    display: block;
+    flex: 1 1 auto;
 }

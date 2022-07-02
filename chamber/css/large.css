@@ -85,4 +85,9 @@
     .list .cards section h4 {
         display: flex;
     }
+    /*Contact*/
+    #contact {
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
 }
