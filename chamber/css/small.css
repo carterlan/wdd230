@@ -343,3 +343,7 @@ form label.top input:required:valid {
     display: block;
     flex: 1 1 auto;
 }
+/*Contact Page*/
+#contactimg {
+    border-radius: 2em;
+}
