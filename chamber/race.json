@@ -1,4 +1,6 @@
-[
+{
+"members": [
+    
     {
       "Race": "White",
       "Population": 37325,
@@ -35,3 +37,4 @@
       "Percentage": "0.0024"
     }
   ]
+}
