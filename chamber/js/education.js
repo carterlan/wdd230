@@ -16,8 +16,8 @@ function displayMembers(member) {
     //a.href = `${member.website}`;
 
     // Change the textContent property to contain the member's full name, address, phone, email
-    title.textContent = `Race: ${member.title}`;
-    field.textContent = `Population: ${member.field}`;
+    title.textContent = `Education Attained: ${member.title}`;
+    field.textContent = `Count: ${member.field}`;
     percent.textContent = `Percentage: ${member.percent}`;
    
 
@@ -43,4 +43,4 @@ fetch(requestURL2)
 });
 
 
-const display = document.querySelector("article");
+const displays = document.querySelector(".tables");

@@ -347,3 +347,8 @@ form label.top input:required:valid {
 #contactimg {
     border-radius: 2em;
 }
+table, th, td {
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }

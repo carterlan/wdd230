@@ -5,12 +5,14 @@ const cards = document.querySelector('.cards');
 function displayMembers(member) {
     // Create elements to add to the document
     let card = document.createElement('section');
+    card.classList.add('spotlight');
     let name = document.createElement('h2');
     let address = document.createElement('h4');
     let phone = document.createElement('h4');
     let email = document.createElement('h4');
     let website = document.createElement('a');
     let memberlevel = document.createElement('h2');
+    memberlevel.classList.add('levels');
     let logo = document.createElement('img');
 
     // Website creator
@@ -40,9 +42,11 @@ function displayMembers(member) {
     card.appendChild(website);
     card.appendChild(memberlevel);
     card.appendChild(logo);
-  
-    // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
+    // Add/append the existing HTML div with the cards class with the section(card)
+    //if(memberlevel.textContent == "Bronze Member"){
+    
+    //}
 }
 
 fetch(requestURL)
@@ -50,7 +54,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const members = jsonObject['members'];
     members.forEach(displayMembers);
 });
@@ -60,6 +64,7 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
@@ -74,3 +79,4 @@ function showList() {
 	display.classList.remove("grid");
 
 }
+

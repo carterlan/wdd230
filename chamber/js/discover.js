@@ -42,5 +42,5 @@ fetch(requestURL)
 });
 
 
-const displays = document.querySelector("article");
+const display = document.querySelector(".cards");
 
