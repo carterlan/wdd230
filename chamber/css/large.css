@@ -30,7 +30,8 @@
 		display: none;
 	}
     main {
-        grid-template-columns: 1fr 2.5fr s
+        grid-template-columns: 1fr 2.5fr 1fr;
+        
     }
     #event {
         grid-column: 1;
@@ -65,7 +66,7 @@
     #spotLight2 {
         grid-row: 2;
     }
-
+    
   /* Forms*/
     #spotLight5 {
         display: block;
@@ -88,7 +89,7 @@
     .list .cards section h4 {
         display: flex;
     }
-    
+
     /*Contact*/
     #contact {
         grid-template-columns: 2.5fr 1fr;
