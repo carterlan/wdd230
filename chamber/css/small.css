@@ -101,12 +101,6 @@ main div {
     padding-top: 1em;
 }
 
-#spotLight1, #spotLight2, #spotLight3 {
-    border-style: solid;
-    border-radius: .3em;
-    padding: 5px;
-    margin: 5px;
-}
 
 #spotLight3 {
     display: none;

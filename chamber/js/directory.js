@@ -42,11 +42,10 @@ function displayMembers(member) {
     card.appendChild(website);
     card.appendChild(memberlevel);
     card.appendChild(logo);
-    document.querySelector('div.cards').appendChild(card);
+  
     // Add/append the existing HTML div with the cards class with the section(card)
-    //if(memberlevel.textContent == "Bronze Member"){
-    
-    //}
+    document.querySelector('div.cards').appendChild(card);
+
 }
 
 fetch(requestURL)
