@@ -28,7 +28,6 @@ if (lastVisit !== 0) {
     timeBtnVstDisplay.textContent = `N/A`;  
 }
 
-console.log(lastVisit);
 
 //Update Last Visit Date
 lastVisit =  localStorage.setItem("lastVisit", Date.now());
