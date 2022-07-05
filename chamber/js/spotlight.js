@@ -1,7 +1,8 @@
 
 const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/chamber/data.json';
-const cards = document.querySelector('.cards');
+let cards = document.querySelector('.cards');
 let count = 0;
+let results = [];
 
 function displayMembers(member) {
     // Create elements to add to the document
@@ -43,24 +44,22 @@ function displayMembers(member) {
     card.appendChild(website);
     card.appendChild(memberlevel);
     card.appendChild(logo);
-    if (count == 4) {
+
+    if (count == 6) {
         return
-      } else if (count <= 3) {
+      } else if (count <= 5) {
         if (member.memberlevel == "Gold") {
-          document.querySelector('div.cards').appendChild(card);
+            results[count] = cards.appendChild(card);
+            count = count + 1;
         };
         if (member.memberlevel == "Silver") {
-          document.querySelector('div.cards').appendChild(card);
-          card.setAttribute("id", "spotLight3");
+            results[count] = cards.appendChild(card);
+            
+            count = count + 1;
         };
-        count = count + 1;
-        console.table(count);
+        card.setAttribute("id", `spotLight${count}`);
       };
   
-    // Add/append the existing HTML div with the cards class with the section(card)
-    //if(memberlevel.textContent == "Bronze Member"){
-    
-    //}
 }
 
 fetch(requestURL)
@@ -68,28 +67,15 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
     const members = jsonObject['members'];
     members.forEach(displayMembers);
+
+    var randomItem = results[Math.floor(Math.random()*[results.length-1])];
+    randomItem.style.display = 'none';
+    var randomItem2 = results[Math.floor(Math.random()*[results.length-1])];
+    while(randomItem == randomItem2) {
+        var randomItem2 = results[Math.floor(Math.random()*[results.length-1])];
+    };
+    randomItem2.style.display = 'none';
 });
 
-
-const display = document.querySelector("article");
-
-
-
-//Input all of the Spotlights
-
-//const spotlights = document.querySelector('#spotlights');
-//console.log(spotlights);  
-//const spotlight = obj.spotlights.querySelector('.spotlight');
-//const spotlight = JSON.parse(spotlights)
-
-//console.log(spotlight)
-//levels.classList.add('tester')
-// temporary checking for valid response and data parsing
-//spotlights.classList.add('test');
-
-//const level = document.querySelector('#levels')
-//let allChildren = spotlights.querySelectorAll(":scope > span");
-//allChildren.forEach(item => item.classList.add("red"));
