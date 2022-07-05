@@ -9,11 +9,6 @@ function displayMembers(member) {
     let field = document.createElement('h4');
     let percent = document.createElement('h4');
 
-    // Website creator
-    //let linktext = document.createTextNode(`${member.name}`);
-    //a.appendChild(linktext);
-    //a.title = `Website: ${member.name}`;
-    //a.href = `${member.website}`;
 
     // Change the textContent property to contain the member's full name, address, phone, email
     title.textContent = `Education Attained: ${member.title}`;

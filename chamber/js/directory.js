@@ -15,12 +15,6 @@ function displayMembers(member) {
     memberlevel.classList.add('levels');
     let logo = document.createElement('img');
 
-    // Website creator
-    //let linktext = document.createTextNode(`${member.name}`);
-    //a.appendChild(linktext);
-    //a.title = `Website: ${member.name}`;
-    //a.href = `${member.website}`;
-
     // Change the textContent property to contain the member's full name, address, phone, email
     name.textContent = `${member.name}`;
     address.textContent = `Address: ${member.address}`

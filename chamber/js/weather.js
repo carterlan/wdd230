@@ -6,8 +6,6 @@ const windSpeed = document.querySelector('#windSpeed');
 
 
 // Call API
-//const url = `https://api.openweathermap.org/data/2.5/weather?q=Spanishfork&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
-//const url = `api.openweathermap.org/data/3.0/onecall?lat=40.1150&lon=-111.654922&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=40.1150&lon=-111.654922&units=imperial&appid=3d65e8439714a8d8df48235075b1f462`;
 
 async function apiFetch() {

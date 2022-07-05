@@ -17,12 +17,6 @@ function displayMembers(member) {
     memberlevel.classList.add('levels');
     let logo = document.createElement('img');
 
-    // Website creator
-    //let linktext = document.createTextNode(`${member.name}`);
-    //a.appendChild(linktext);
-    //a.title = `Website: ${member.name}`;
-    //a.href = `${member.website}`;
-
     // Change the textContent property to contain the member's full name, address, phone, email
     name.textContent = `${member.name}`;
     address.textContent = `Address: ${member.address}`
@@ -31,6 +25,7 @@ function displayMembers(member) {
     memberlevel.textContent = `${member.memberlevel} Member`
     website.href= member.website
     website.textContent =(`${member.name}`)
+
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', member.imageurl);
     logo.setAttribute('alt', `Logo of ${member.name}`);
@@ -45,6 +40,7 @@ function displayMembers(member) {
     card.appendChild(memberlevel);
     card.appendChild(logo);
 
+    //Create new array of Gold and Silver Members
     if (count == 6) {
         return
       } else if (count <= 5) {
@@ -69,7 +65,8 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const members = jsonObject['members'];
     members.forEach(displayMembers);
-
+    
+    //Randomize list of members and remove two from view on the large screen view
     var randomItem = results[Math.floor(Math.random()*[results.length-1])];
     randomItem.style.display = 'none';
     var randomItem2 = results[Math.floor(Math.random()*[results.length-1])];

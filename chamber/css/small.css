@@ -136,10 +136,6 @@ footer div {
     border-top-style: solid;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-
 .responsive li {
 	display: block; 
 }
@@ -219,9 +215,11 @@ button:hover {
     list-style: none;
     font-size: 1.5em;
 }
+#population {
+    max-height: 1000px;
+}
 
 /*   Forms    */
-
 form fieldset {
     margin: 2rem 1rem;
     border: 1px solid #f2856d;
@@ -290,6 +288,7 @@ form label.top input:required:valid {
     margin-left: .3rem;
     margin-top: .3rem;
 }
+
 /* Direcctory */
 .cards, .tables {
     background-color: white;
@@ -337,6 +336,7 @@ form label.top input:required:valid {
     display: block;
     flex: 1 1 auto;
 }
+
 /*Contact Page*/
 #contactimg {
     border-radius: 2em;
