@@ -41,30 +41,41 @@
         <picture>
             <img id="heroimg" src="images/Provo-City-Center-Temple03.jpg" alt="Temple Banner" width="100%">
         </picture>
-        <a href="reservations.html"><button id="booknow">Book Now</button></a>
-        <p>Doing work for the dead can be exhausting, let us help YOU rest in peace!
+        <button onclick="window.location.href='reservations.html'" id="booknow">Book Now</button>
+        <p><b>Come enjoy rest and relaxation after a wonderful day of working in the temple performing ordinances of your loved ones!</b><br><br>
 
-        We are happy you are here. While you prepare for your temple trip, we are preparing for you. We have many services and accomodations to meet your needs, and will be here for you. If you have any questions please give us a call, 999.999.9999. We are ready to help, and we are looking forward to your stay with us. If you are ready set up your reservation you can do so here.
-        
-        Temple Inn & Suites caters to temple workers, patrons, and their families by providing specialized service and accomodations that meet the needs of those patrons. These hotel accomodations and services are available to anyone willing to abide by the terms and policies outlined by our company.
-        
-        Thank you!</p>
-        <form action="/action_page.php">
-            <label for="temples">Choose a Temple</label>
-            <select name="temples" class="templesjson">
-                <option ></option>
-               
+        Welcome the the Temple Inn and Suites. We are here you make you next visit to the temple and nice and luxurious one.
+        We have many services and accomodations ready for you when staying at the Temple Inn and Suite to make your stay perfect.
+        If you have any questions please give us a call @(801) 400-1010 we are happy to provide you with the answers that you seek. 
+        <b>Go to our reservations page to reserve your stay now!</b><br></p>
+
+        <form name="form" method="POST" action="services.html">
+            <label for="temples">Choose a Temple for your next stay</label>
+            <select name="temples" class="templesjson" onchange="this.form.submit();" method="post">
+                <option >Select a temple</option>  
             </select>
         </form>
-
+        <div id="amenties">
+            <h3 id="amen">Amenties</h3>
+            <ul>
+                <li>Breakfast</li>
+                <li>Exercise/workout room</li>
+                <li>Indoor pool</li>
+                <li>WiFi high-speed internet access and smart TVs</li>
+                <li>Parking</li>
+                <li>Temple shuttle</li>
+                <li>Family history consultation and family ordinance card service</li>
+            </ul>
+        </div>
+        
     </main>
 
     <footer>
-       <iframe title="hotelMainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436697!2d-77.09900308425124!3d38.983160179557466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0xb64f1e3725476c15!2s4810+Montgomery+Ln+%23500%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544482533359" style="border:0" allowfullscreen=""></iframe>
+       <iframe title="hotelMainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4086044441647!2d-77.0989996848504!3d38.98316994948919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0x42c7ba977f6144ef!2s4810%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658010316403!5m2!1sen!2sus" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <h3 id="name"><u>Temple Inn and Suites</u></h3>
 
         <div id="contactinfo">   
-            <img src="images/pinIcon.png" alt="location"> <p id="address">4847 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <img src="images/pinIcon.png" alt="location"> <a href="https://www.google.com/maps/place/4810+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9831699,-77.0989997,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97c9d6d973d:0x42c7ba977f6144ef!8m2!3d38.9831658!4d-77.096811?hl=en-US" style="border:0" allowfullscreen=""></iframe>4847 Montgomery Ln #300, Bethesda, MD 20814<br></a>
             <img src="images/emailIcon.png" alt="mail"><a href="mailto:contact@templeinnsuites.com"> contact@templeinnsuites.com<br></a>
             <img src="images/phoneIcon.png" alt="phone number"><a href="tel:801-400-1010" id ="phonenumber"> (801) 400-1010</a>
         </div> 
