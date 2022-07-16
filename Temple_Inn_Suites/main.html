@@ -39,10 +39,9 @@
 
     <main>
         <picture>
-            <img src="images/Provo-City-Center-Temple03.jpg" alt="Temple Banner" width="100%"><button id="booknow">Book Now</button>
-            
+            <img id="heroimg" src="images/Provo-City-Center-Temple03.jpg" alt="Temple Banner" width="100%">
         </picture>
-        
+        <a href="reservations.html"><button id="booknow">Book Now</button></a>
         <p>Doing work for the dead can be exhausting, let us help YOU rest in peace!
 
         We are happy you are here. While you prepare for your temple trip, we are preparing for you. We have many services and accomodations to meet your needs, and will be here for you. If you have any questions please give us a call, 999.999.9999. We are ready to help, and we are looking forward to your stay with us. If you are ready set up your reservation you can do so here.
@@ -52,11 +51,9 @@
         Thank you!</p>
         <form action="/action_page.php">
             <label for="temples">Choose a Temple</label>
-            <select name="temples">
-                <option>Provo</option>
-                <option>Provo</option>
-                <option>Provo</option>
-                <option>Provo</option>
+            <select name="temples" class="templesjson">
+                <option ></option>
+               
             </select>
         </form>
 
@@ -95,4 +92,5 @@
 </body>
 
 <script src="js/index.js"></script>
+<script src="js/temples.js"></script>
 </html>

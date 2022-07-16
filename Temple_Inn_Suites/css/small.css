@@ -10,7 +10,7 @@ header {
     gap: .5em;
 }
 #title {
-    font-size: 1.3em;
+    font-size: 1.2em;
     background-color: #d9d9d9;
     border-radius: 1em;
     border-style: solid;
@@ -69,11 +69,26 @@ header {
     margin-left: .5em;
 }
 
+
+
 /*Main*/
 picture {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 95%;
+}
+#heroimg {
+    margin-top: 1em;
+    border-radius: 2em;
+}
+#booknow {
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+    background-color: #284b63;
+    padding: .4em;
+    border-radius: 2em;
+    color:#d9d9d9;
 }
 
 /*footer*/
