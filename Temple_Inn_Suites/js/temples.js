@@ -10,6 +10,8 @@ function displaytemples(temple) {
   
     // Change the textContent property of the h2 element to contain the temple's full name
     h2.textContent = `${temple.name}`;
+    h2.className = `${temple.name}`;
+    
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temple.src);
@@ -18,8 +20,8 @@ function displaytemples(temple) {
   
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
-    //card.appendChild(portrait);
-  
+    card.appendChild(portrait);
+    card.value = temple.src;
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('select.templesjson').appendChild(card);
 }
