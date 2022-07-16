@@ -7,9 +7,9 @@ const today = new Date().toLocaleDateString('en-UK', options);
 
 //document.querySelector('#today').textContent = today;
 
-document.querySelector('#lastUpdated').textContent = `Last Modification: ${document.lastModified}`;
+document.querySelector('#lastUpdated').innerHTML = `<b>Last Modification:</b> ${document.lastModified}<br>`;
 
-document.querySelector('#copyRight').innerHTML = `\u00A9 ${year} Temple Inn & Suites <br> <b>Created By: Landon Carter</b> <br>`;
+document.querySelector('#copyRight').innerHTML = `\u00A9 ${year} Temple Inn & Suites<b>|Landon Carter|</b> <br>`;
 
 //Interactive menu
 const hambutton = document.querySelector('.ham');

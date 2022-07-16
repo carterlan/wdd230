@@ -68,7 +68,7 @@ div {
     border-style: solid;
 }
 .navigation a.ham::before {
-	content: '<img src="images/Temple Icon.png" alt="Temple LOGO" width=64px height=64px>';
+	content: '/2630';
 }
 
 #banner {

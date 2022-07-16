@@ -75,3 +75,36 @@ picture {
     margin: auto;
     width: 90%;
 }
+
+/*footer*/
+footer {
+    background-color: #3c6e71;
+    padding: .5em;
+    text-align: center;
+}
+
+#contactinfo {
+    text-align: left;
+    padding: .5em .5em 2em .5em;
+}
+
+#sociallinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: .5em;
+}
+picture.social {
+    background-color: #d9d9d9;
+    border-radius: 5em;
+    padding: .2em;
+    width: 50%;
+    padding-top: .5em;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#bottomfooter {
+    border-top-style: solid;
+    padding: .5em;
+}
