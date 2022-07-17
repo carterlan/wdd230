@@ -1,5 +1,5 @@
 const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/Temple_Inn_Suites/temples.json';
-const cards = document.querySelector('.templesjson');
+const cards = document.querySelector('.temples');
 
 
 function displaytemples(temple) {
@@ -15,15 +15,14 @@ function displaytemples(temple) {
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temple.src);
-    portrait.setAttribute('alt', `Portait of ${temple.name} Latter-day Prophet`);
+    portrait.setAttribute('alt', `Picture of ${temple.name} temple`);
     portrait.setAttribute('loading', 'lazy');
   
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(portrait);
-    card.value = temple.src;
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('select.templesjson').appendChild(card);
+    document.querySelector('.temples').appendChild(card);
 }
 
 fetch(requestURL)
