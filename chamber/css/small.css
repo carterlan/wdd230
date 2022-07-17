@@ -68,7 +68,7 @@ div {
     border-style: solid;
 }
 .navigation a.ham::before {
-	content: '/2630';
+	content: '\2630';
 }
 
 #banner {

@@ -83,15 +83,15 @@ picture {
 }
 #booknow {
     position: relative;
-    bottom: 50px;
-    left: 250px;
+    bottom: 3em;
+    left: 16em;
     background-color: #284b63;
     padding: .4em;
     border-radius: 2em;
     color:#d9d9d9;
 }
 p {
-    margin-top: -20px;
+    margin: -20px 2% 2% 2%;
 }
 
 form {
