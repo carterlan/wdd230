@@ -2,11 +2,11 @@
     "temples": [
         {
             "name": "Denver Colorado",
-            "src": "https://churchofjesuschristtemples.org/denver-colorado-temple/photographs/#Gallery-7"
+            "src": "https://assets.ldscdn.org/f2/3e/f23ea5ed176dc44b1c624868ddd0e05b20675ee0/denver_colorado_temple_grounds.jpeg"
         },
         {
             "name": "Draper Utah",
-            "src": "https://churchofjesuschristtemples.org/draper-utah-temple/photographs/#Official-13"
+            "src": "https://assets.ldscdn.org/9d/dc/9ddc03f577e4395b3408d00dcc874fb6b74b36de/draper_utah_temple.jpeg"
         },
         {
             "name": "Brigham City Utah",
@@ -14,7 +14,7 @@
         },
         {
             "name": "Manti Utah",
-            "src": "https://churchofjesuschristtemples.org/manti-utah-temple/photographs/#Construction-32"
+            "src": "https://assets.ldscdn.org/f3/85/f38513cc90a30a2095d0891fb1b1a9419fcfeba5/manti_temple_lds.jpeg"
         }
     ]
 }
