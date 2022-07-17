@@ -1,0 +1,30 @@
+@media only screen and (min-width: 57em){
+    aside {
+        display: block;
+        width: 20%;
+        padding-left: .5rem;
+        margin-left: .5rem;
+        float: right;
+        
+    }
+    
+    aside > p {
+        margin: .5rem;
+    }
+    
+    .navigation {
+        background-color: #3c6e71;
+    }
+    .navigation :hover {
+    background-color: #d9d9d9;
+    border-radius: 2em;
+    }
+
+    /*Reservation Page*/
+    #reservation {
+        font-size: 1.5em;
+    }
+    #contactinfo {
+        margin: 0 20em 0 20em;
+    }
+}

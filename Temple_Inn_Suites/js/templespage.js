@@ -4,7 +4,7 @@ const cards = document.querySelector('.templesjson');
 
 function displaytemples(temple) {
     // Create elements to add to the document
-    let card = document.createElement('option');
+    let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let portrait = document.createElement('img');
   
@@ -31,7 +31,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
     const temples = jsonObject['temples'];
     temples.forEach(displaytemples);
 });

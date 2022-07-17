@@ -9,6 +9,9 @@ header {
     background-color: #3c6e71;
     gap: .5em;
 }
+aside {
+    display: none;
+}
 #title {
     font-size: 1.2em;
     background-color: #d9d9d9;
@@ -158,3 +161,23 @@ picture.social {
     border-top-style: solid;
     padding: .5em;
 }
+
+/*Reservation Page*/
+#reservation{
+    margin-left:1em;
+    width: 90%;
+}
+form input, form label, form select {
+    margin-bottom: 1.5em;
+}
+
+input[type=submit] {
+    width: 91%;
+    background-color: #284b63;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+  }

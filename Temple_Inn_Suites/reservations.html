@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <meta name = "description" content="Temple Inn & Suites">
+    <meta name="keywords" content="Hotel,Motel,Inn,Suites,Suite,Book A Room,Free WiFi">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--CSS rules to specify families: font-family: 'Montserrat', sans-serif;-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body> 
+    <header>
+        <nav class="home">
+            <ul class="navigation">
+                <li><a class="ham" href="#"></a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="longtermstay.html">Long Term Stays</a></li>
+            </ul>
+        </nav>
+
+        <h1 id = "title">Temple Inn & Suites</h1>
+
+        <img id ="templeLogo" src="images/Temple Icon.png" alt="Temple LOGO" width=60em height=60em>
+
+   
+    </header>
+
+    <main id="reservation">
+        <!-- Title -->
+            <h2>Book your Reservation</h2>
+
+        <!-- Reservation Form -->
+        <form action="thankyou.html" method="get">
+            <!-- location -->
+            <label>Location </label>
+            <select name="location">
+                <option disabled="" selected="" value="">Select a location...</option>
+                <option value="Manti">Manti, Utah</option>
+                <option value="Denver">Denver, Colorado</option>
+                <option value="Draper">Draper, Utah</option>
+                <option value="Brigham">Brigham City, Utah</option>
+            </select>
+
+            <!-- date -->
+            <label for="dateIn"><br>Check in: </label>
+            <input name="date" type="date" min="2022-07-16" max="2024-12-20" class="input">
+
+            <labelfor="dateOut"><br>Check out: </label>
+            <input name="date" type="date" min="2022-07-16" max="2024-12-20" class="input">
+
+            <label for="roomType"><br>Room Type </label>
+            <input list="roomTypeList" id="roomType" class="typeArea" placeholder="Please Select">
+            <datalist id="roomTypeList">
+                <option value="Long Term Suite"></option>
+                <option value="King"></option>
+                <option value="Queen"></option>
+                <option value="Double"></option>
+            </datalist>
+
+            <!-- name -->
+            <label for="name"><br>First Name</label>
+            <input type="text" name="firstname" class="input" placeholder="First Name" pattern="[A-Za-z, ' ']{5,}" minlength="3" required="">
+
+            <label for="name"><br>Last Name</label>
+            <input type="text" name="lastname" class="input" placeholder="Last Name" pattern="[A-Za-z, ' ']{5,}" minlength="3" required="">
+
+            <!-- email -->   
+            <label for="email"><br>Email</label>
+            <input type="email" class="input" name="email" placeholder="email@yourmail.com" required="">          
+
+            <!-- phone -->
+            <label for="phone"><br>Phone</label>
+            <input type="tel" class="input" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required="">
+
+            <!-- submit button -->
+            <input type="submit" name="message" value="Reserve Now" class="btn" onclick="thanks()">
+
+        </form>
+    </main>
+    
+
+    <footer>
+       <iframe title="hotelMainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4086044441647!2d-77.0989996848504!3d38.98316994948919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0x42c7ba977f6144ef!2s4810%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658010316403!5m2!1sen!2sus" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 id="name"><u>Temple Inn and Suites</u></h3>
+
+        <div id="contactinfo">   
+            <img src="images/pinIcon.png" alt="location"> <a href="https://www.google.com/maps/place/4810+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9831699,-77.0989997,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97c9d6d973d:0x42c7ba977f6144ef!8m2!3d38.9831658!4d-77.096811?hl=en-US" style="border:0" allowfullscreen=""></iframe>4847 Montgomery Ln #300, Bethesda, MD 20814<br></a>
+            <img src="images/emailIcon.png" alt="mail"><a href="mailto:contact@templeinnsuites.com"> contact@templeinnsuites.com<br></a>
+            <img src="images/phoneIcon.png" alt="phone number"><a href="tel:801-400-1010" id ="phonenumber"> (801) 400-1010</a>
+        </div> 
+        <div id="sociallinks">
+            <picture class="social">
+                <a href="https://www.facebook.com"><img src="images/facebookIcon.png" alt="Facebook LOGO" width=30px height=30px></a>
+            </picture>
+
+            <picture class="social">
+                <a href="https://www.instagram.com"><img src="images/instagramIcon.png" alt="Linkedin LOGO" width=30px height=30px></a>
+            </picture>
+
+            <picture class="social">
+                <a href="https://www.linkedin.com"><img src="images/linkedinIcon.png" alt="Linkedin LOGO" width=30px height=30px></a>
+            </picture>
+        </div>
+        <div id="bottomfooter">
+            <span id="copyRight"></span>   
+            <span id="lastUpdated"></span> 
+            <a href="resource.html">Resources</a>  
+        </div>  
+
+    </footer> 
+    
+</body>
+
+<script src="js/index.js"></script>
+<script src="js/temples.js"></script>
+<script src="js/weather.js"></script>
+</html>
