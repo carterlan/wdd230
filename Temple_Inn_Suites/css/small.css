@@ -181,3 +181,25 @@ input[type=submit] {
     border-radius: 2em;
     cursor: pointer;
   }
+  /*Temples Page*/
+  #templespage{
+    text-align: center;
+  }
+
+   /*services Page*/
+   #servicespage h1{
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 2em;
+    margin: .5em;
+    
+  }
+  #servicespage div{
+    background-color: #284b63;
+    margin: 1em;
+    border-radius: 2em;
+    padding: .25em;
+  }
+  #servicespage div ul{
+    color:#d9d9d9;
+  }
