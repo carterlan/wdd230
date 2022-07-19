@@ -3,47 +3,47 @@
         {
             "name": "Denver Colorado",
             "src": "https://assets.ldscdn.org/f2/3e/f23ea5ed176dc44b1c624868ddd0e05b20675ee0/denver_colorado_temple_grounds.jpeg",
-            "address": "2001 E Phillips Cir Centennial CO 80122-3264 United States",
-            "telephone": "(1) 303-730-0220",
-            "email" : "denvertemple@lds.org",
+            "address": "<br>2001 E Phillips Cir Centennial CO 80122-3264 United States",
+            "telephone": "<br>(1) 303-730-0220",
+            "email" : "<br>denvertemple@lds.org",
             "services": "<br>Clothing rental available <br>No cafeteria available <br>No patron housing available <br>Distribution center nearby",
-            "closures2022": "2022 -Monday, 12 September 2022:Monday, 31 October 2022 -Wednesday, 23 November 2022 (Limited Operations) -Thursday, 24 November 2022 -Saturday, 24 December 2022 -Saturday, 31 December 2022 (Limited Operations)",
-            "closures2023": "2033 -Saturday, 1 April 2023 -Monday 3 April 2023:Monday, 17 April 2023 -Tuesday, 4 July 2023 -Monday, 11 September 2023:Monday, 25 September 2023 -Saturday, 30 September 2023 -Wednesday, 22 November 2023 (Limited Operations) -Thursday, 23 November 2023",
-            "additional": "Milestones -31 March 1982: Announced -19 May 1984: Groundbreaking: 24 October 1986 Dedicated — dedicatory prayer"
+            "closures2022": "<br>Monday, 12 September 2022 - Monday, 31 October 2022 <br>Wednesday, 23 November 2022 (Limited Operations) <br>Thursday, 24 November 2022 <br>Saturday, 24 December 2022 <br>Saturday, 31 December 2022 (Limited Operations)",
+            "closures2023": "<br>Saturday, 1 April 2023 <br>Monday 3 April 2023 - Monday, 17 April 2023 <br>Tuesday, 4 July 2023 <br>Monday, 11 September 2023 - Monday, 25 September 2023 <br>Saturday, 30 September 2023 <br>Wednesday, 22 November 2023 (Limited Operations) <br>Thursday, 23 November 2023", 
+            "additional": "<br>Milestones: <br>-31 March 1982: Announced <br>-19 May 1984: Groundbreaking: <br>-24 October 1986 Dedicated — dedicatory prayer"
         },
         {
             "name": "Draper Utah",
             "src": "https://assets.ldscdn.org/9d/dc/9ddc03f577e4395b3408d00dcc874fb6b74b36de/draper_utah_temple.jpeg",
-            "address": "14065 Canyon Vista Ln Draper UT 84020-5626 United States",
-            "telephone": "(1) 801-576-4240",
-            "email" : "drapertemple@lds.org",
+            "address": "<br>14065 Canyon Vista Ln Draper UT 84020-5626 United States",
+            "telephone": "<br>(1) 801-576-4240",
+            "email" : "<br>drapertemple@lds.org",
             "services": "<br>Clothing rental available <br>No cafeteria available <br>No patron housing available <br>Distribution center nearby",
             "closures2022": "<br>Monday, 12 September 2022 - Monday, 31 October 2022 <br>Wednesday, 23 November 2022 (Limited Operations) <br>Thursday, 24 November 2022 <br>Saturday, 24 December 2022 <br>Saturday, 31 December 2022 (Limited Operations)",
-            "closures2023": "2033 -Saturday, 1 April 2023 -Monday 3 April 2023:Monday, 17 April 2023 -Tuesday, 4 July 2023 -Monday, 11 September 2023:Monday, 25 September 2023 -Saturday, 30 September 2023 -Wednesday, 22 November 2023 (Limited Operations) -Thursday, 23 November 2023",
-            "additional": "Milestones 2 October 2004: Announced -5 August 2006: Groundbreaking: 20 March 2009 Dedicated — dedicatory prayer"
+            "closures2023": "<br>Saturday, 1 April 2023 <br>Monday 3 April 2023 - Monday, 17 April 2023 <br>Tuesday, 4 July 2023 <br>Monday, 11 September 2023 - Monday, 25 September 2023 <br>Saturday, 30 September 2023 <br>Wednesday, 22 November 2023 (Limited Operations) <br>Thursday, 23 November 2023",   
+            "additional": "<br>Milestones: <br>-2 October 2004: Announced <br>-5 August 2006: Groundbreaking: <br>-20 March 2009 Dedicated — dedicatory prayer"
         },
         {
             "name": "Brigham City Utah",
             "src": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg",
-            "address": "14065 Canyon Vista Ln Draper UT 84020-5626 United States",
-            "telephone": "(1) 801-576-4240",
-            "email" : "drapertemple@lds.org",
+            "address": "<br>14065 Canyon Vista Ln Draper UT 84020-5626 United States",
+            "telephone": "<br>(1) 801-576-4240",
+            "email" : "<br>brighamcitytemple@lds.org",
             "services": "<br>Clothing rental available <br>No cafeteria available <br>No patron housing available <br>Distribution center nearby",
-            "closures2022": "2022 -Monday, 12 September 2022:Monday, 31 October 2022 -Wednesday, 23 November 2022 (Limited Operations) -Thursday, 24 November 2022 -Saturday, 24 December 2022 -Saturday, 31 December 2022 (Limited Operations)",
-            "closures2023": "2033 -Saturday, 1 April 2023 -Monday 3 April 2023:Monday, 17 April 2023 -Tuesday, 4 July 2023 -Monday, 11 September 2023:Monday, 25 September 2023 -Saturday, 30 September 2023 -Wednesday, 22 November 2023 (Limited Operations) -Thursday, 23 November 2023",
-            "additional": "Milestones 2 October 2004: Announced -5 August 2006: Groundbreaking: 20 March 2009 Dedicated — dedicatory prayer"
+            "closures2022": "<br>Monday, 12 September 2022 - Monday, 31 October 2022 <br>Wednesday, 23 November 2022 (Limited Operations) <br>Thursday, 24 November 2022 <br>Saturday, 24 December 2022 <br>Saturday, 31 December 2022 (Limited Operations)",
+            "closures2023": "<br>Saturday, 1 April 2023 <br>Monday 3 April 2023 - Monday, 17 April 2023 <br>Tuesday, 4 July 2023 <br>Monday, 11 September 2023 - Monday, 25 September 2023 <br>Saturday, 30 September 2023 <br>Wednesday, 22 November 2023 (Limited Operations) <br>Thursday, 23 November 2023",
+            "additional": "<br>Milestones: <br>-2 October 2004: Announced <br>-5 August 2006: Groundbreaking: <br>-20 March 2009 Dedicated — dedicatory prayer"
             
         },
         {
             "name": "Manti Utah",
             "src": "https://assets.ldscdn.org/f3/85/f38513cc90a30a2095d0891fb1b1a9419fcfeba5/manti_temple_lds.jpeg",
-            "address": "14065 Canyon Vista Ln Draper UT 84020-5626 United States",
-            "telephone": "(1) 801-576-4240",
-            "email" : "drapertemple@lds.org",
+            "address": "<br>14065 Canyon Vista Ln Draper UT 84020-5626 United States",
+            "telephone": "<br>(1) 801-576-4240",
+            "email" : "<br>mantitemple@lds.org",
             "services": "<br>Clothing rental available <br>No cafeteria available <br>No patron housing available <br>Distribution center nearby",
-            "closures2022": "2022 -Monday, 12 September 2022:Monday, 31 October 2022 -Wednesday, 23 November 2022 (Limited Operations) -Thursday, 24 November 2022 -Saturday, 24 December 2022 -Saturday, 31 December 2022 (Limited Operations)",
-            "closures2023": "2033 -Saturday, 1 April 2023 -Monday 3 April 2023:Monday, 17 April 2023 -Tuesday, 4 July 2023 -Monday, 11 September 2023:Monday, 25 September 2023 -Saturday, 30 September 2023 -Wednesday, 22 November 2023 (Limited Operations) -Thursday, 23 November 2023",
-            "additional": "Milestones 2 October 2004: Announced -5 August 2006: Groundbreaking: 20 March 2009 Dedicated — dedicatory prayer"
+            "closures2022": "<br>Monday, 12 September 2022 - Monday, 31 October 2022 <br>Wednesday, 23 November 2022 (Limited Operations) <br>Thursday, 24 November 2022 <br>Saturday, 24 December 2022 <br>Saturday, 31 December 2022 (Limited Operations)",
+            "closures2023": "<br>Saturday, 1 April 2023 <br>Monday 3 April 2023 - Monday, 17 April 2023 <br>Tuesday, 4 July 2023 <br>Monday, 11 September 2023 - Monday, 25 September 2023 <br>Saturday, 30 September 2023 <br>Wednesday, 22 November 2023 (Limited Operations) <br>Thursday, 23 November 2023",
+            "additional": "<br>Milestones: <br>-2 October 2004: Announced <br>-5 August 2006: Groundbreaking: <br>-20 March 2009 Dedicated — dedicatory prayer"
         }
     ]
 }

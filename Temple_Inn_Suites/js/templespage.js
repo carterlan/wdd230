@@ -16,7 +16,7 @@ function displaytemples(temple) {
   
     // Change the textContent property of the h2 element to contain the temple's full name
     h2.textContent = `${temple.name}`;
-    h2.className = `${temple.name}`;
+    card.className = `temple`;
     address.innerHTML=`<b>Address:</b> ${temple.address}<br>`;
     email.innerHTML = `<b>Email:</b> ${temple.email}<br>`;
     services.innerHTML = `<b>Services:</b> ${temple.services}<br>`;
