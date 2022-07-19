@@ -4,7 +4,7 @@ const cards = document.querySelector('.temples');
 
 function displaytemples(temple) {
     // Create elements to add to the document
-    let card = document.createElement('section');
+    let card = document.createElement('div');
     let h2 = document.createElement('h2');
     let address = document.createElement('p');
     let email = document.createElement('p');
@@ -22,7 +22,7 @@ function displaytemples(temple) {
     services.innerHTML = `<b>Services:</b> ${temple.services}<br>`;
     closures2022.innerHTML = `<b> Closures 2022</b> ${temple.closures2022}`;
     closures2023.innerHTML = `<b> Closures 2023</b> ${temple.closures2023}`;
-    additional.innerHTML = `<b> Additional Information</b> ${temple.additional}`;
+    additional.innerHTML = `<b>Milestones: ${temple.additional}`;
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temple.src);

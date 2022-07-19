@@ -19,6 +19,22 @@
     background-color: #d9d9d9;
     border-radius: 2em;
     }
+    /*Footer*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #map {
+        grid-row: 1 / 3;
+    }
+    
+    #name {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #sociallinks, #bottomfooter {
+        grid-column: 1 / 3;
+    }
 
     /*Reservation Page*/
     #reservation {

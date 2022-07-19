@@ -12,11 +12,16 @@ header {
 aside {
     display: none;
 }
-#title {
+#title, h1, h3 {
     font-size: 1.2em;
     background-color: #d9d9d9;
     border-radius: 1em;
     border-style: solid;
+}
+main h1 {
+    font-size: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
 }
 
 #templeLogo { 
@@ -101,7 +106,7 @@ form {
     padding: .5em;
 }
 
-#amenties {
+#amenties, div {
     margin: .5em;
     background-color: #284b63;
     border-radius: 2em;
@@ -141,12 +146,7 @@ footer {
     color:#d9d9d9;
 }
 
-#sociallinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: .5em;
-}
+
 picture.social {
     background-color: #d9d9d9;
     border-radius: 5em;
@@ -157,9 +157,28 @@ picture.social {
     border-width: 2px;
 }
 
-#bottomfooter {
-    border-top-style: solid;
+
+#sociallinks, #bottomfooter {
+    background-color: transparent;
+    border-radius: 0;
+    color: #d9d9d9;
+    border-width: 5px;
+}
+#sociallinks {
+    display: grid; 
+    border-style: solid;
+    border-radius: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: .5em;
+}
+#bottomfooter {
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    color: black;
+    padding: .5em;
+
 }
 
 /*Reservation Page*/
@@ -184,6 +203,9 @@ input[type=submit] {
   /*Temples Page*/
   #templespage{
     text-align: center;
+  }
+  .temples p{
+    padding: 1em;
   }
 
    /*services Page*/
