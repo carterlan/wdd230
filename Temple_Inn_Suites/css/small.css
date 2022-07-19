@@ -137,6 +137,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-content: center;
+    gap: 1em;
 }
 #contactinfo img, #contactinfo a {
     display: flex;
@@ -144,6 +145,7 @@ footer {
     align-items: center;
     justify-content: center;
     color:#d9d9d9;
+    
 }
 
 
