@@ -208,6 +208,11 @@ input[type=submit] {
   }
   .temples p{
     padding: 1em;
+    font-size: 1.1em;
+  }
+  .temples img {
+    border-radius: 10em;
+    max-width: 1300px;
   }
 
    /*services Page*/

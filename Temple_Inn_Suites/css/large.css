@@ -43,4 +43,19 @@
     #contactinfo {
         margin: 0 20em 0 20em;
     }
+    /*Temples Page*/
+    .temple{
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        gap: 1em;
+    }
+    .temple img {
+        grid-column: 1;
+        grid-row: 1 / 10;
+        margin:  8em;
+        margin-left: 2em;
+    }
+    .temple h2, .temple p {
+        grid-column: 2;
+    }
 }

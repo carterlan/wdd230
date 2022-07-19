@@ -28,7 +28,7 @@ function displaytemples(temple) {
     portrait.setAttribute('src', temple.src);
     portrait.setAttribute('alt', `Picture of ${temple.name} temple`);
     portrait.setAttribute('loading', 'lazy');
-    portrait.setAttribute('width', '100%')
+    portrait.setAttribute('width', '96%');
   
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
