@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <meta name = "description" content="Temple Inn & Suites">
+    <meta name="keywords" content="Hotel,Motel,Inn,Suites,Suite,Book A Room,Free WiFi">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--CSS rules to specify families: font-family: 'Montserrat', sans-serif;-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body> 
+    <header>
+        <nav class="home">
+            <ul class="navigation">
+                <li><a class="ham" href="#"></a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="longtermstay.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h1 id = "title">Temple Inn & Suites</h1>
+
+        <img id ="templeLogo" src="images/Temple Icon.png" alt="Temple LOGO" width=60em height=60em>
+
+    </header>
+
+    <main id="contact">
+    <div>
+    <form action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label class="top">Name* <input type="text" name="fname" required placeholder="Enter your Name"></label>
+            <label class="top"><br>Email* <input type="email" name="email" required placeholder="Enter your Email" ></label>
+            <label  class="top">Question/Concern*<textarea name="question" id="business" required placeholder="Ener your question/concern"></textarea></label>
+        </fieldset>
+        <label><button id="btnSubmit" type="submit">Send Message</button></label>
+        <label><input type="hidden" name="dateTime" id="dateTime" value=""></label>
+    </form>
+    </div>
+    <div id="longterm">
+        
+        <h2>Special Rates are available for Temple Missionaries seeking a long term stay solution</h2>
+        <picture><img src="data:image/jpeg;base64,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"></picture>
+        <p><br>Long Term Stays include the following extra Amenites:</p>
+        <ul>
+            <li>Kitchenette</li>
+            <li>Washer</li>
+            <li>Dryer</li>
+            <li>Pull out couch for Traveling Missionaries to use</li>
+        </ul>
+    </div>
+    </main>
+
+
+    <footer>
+       <iframe id="map" title="hotelMainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4086044441647!2d-77.0989996848504!3d38.98316994948919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0x42c7ba977f6144ef!2s4810%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658010316403!5m2!1sen!2sus" width="98%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 id="name"><u>Temple Inn and Suites</u></h3>
+
+        <div id="contactinfo">   
+            <img src="images/pinIcon.png" alt="location"> <a href="https://www.google.com/maps/place/4810+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9831699,-77.0989997,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97c9d6d973d:0x42c7ba977f6144ef!8m2!3d38.9831658!4d-77.096811?hl=en-US" style="border:0" allowfullscreen=""></iframe>4847 Montgomery Ln #300, Bethesda, MD 20814<br></a>
+            <img src="images/emailIcon.png" alt="mail"><a href="mailto:contact@templeinnsuites.com"> contact@templeinnsuites.com<br></a>
+            <img src="images/phoneIcon.png" alt="phone number"><a href="tel:801-400-1010" id ="phonenumber"> (801) 400-1010</a>
+        </div> 
+        <div id="sociallinks">
+            <picture class="social">
+                <a href="https://www.facebook.com"><img src="images/facebookIcon.png" alt="Facebook LOGO" width=30px height=30px></a>
+            </picture>
+
+            <picture class="social">
+                <a href="https://www.instagram.com"><img src="images/instagramIcon.png" alt="Linkedin LOGO" width=30px height=30px></a>
+            </picture>
+
+            <picture class="social">
+                <a href="https://www.linkedin.com"><img src="images/linkedinIcon.png" alt="Linkedin LOGO" width=30px height=30px></a>
+            </picture>
+        </div>
+        <div id="bottomfooter">
+            <span id="copyRight"></span>   
+            <span id="lastUpdated"></span> 
+            <a href="resource.html">Resources</a>  
+        </div>  
+
+    </footer> 
+    
+</body>
+
+<script src="js/templespage.js"></script>
+<script src="js/index.js"></script>
+
+</html>
+
+
+
+ 
