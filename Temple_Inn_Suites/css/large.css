@@ -30,7 +30,7 @@
     #name {
         grid-row: 1;
         grid-column: 1;
-        margin: 0 12em .5em 12em;
+
     }
     #sociallinks, #bottomfooter {
         grid-column: 1 / 3;
@@ -57,4 +57,12 @@
     .temple h2, .temple p {
         grid-column: 2;
     }
+    .like {
+        grid-column: 1;
+        grid-row: 6;
+        max-width: 10em;
+        max-height: 10em;
+       
+
+      }
 }

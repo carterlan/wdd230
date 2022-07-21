@@ -1,6 +1,6 @@
 const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/Temple_Inn_Suites/temples.json';
 const cards = document.querySelector('.temples');
-const image =  document.getElementById("likes");
+const like =  document.getElementById("likes");
 let count = 0;	
 const onclick ='onClick';
 
@@ -28,8 +28,10 @@ function displaytemples(temple) {
     closures2023.innerHTML = `<b> Closures 2023</b> ${temple.closures2023}`;
     additional.innerHTML = `<b>Milestones: ${temple.additional}`;
     button.setAttribute('class', 'like');
-    button.setAttribute('onclick', 'changeImage(this)');
-    like.setAttribute('id', `likes`);
+   
+    like.setAttribute('id', `likes${count}`); 
+    like.setAttribute('onclick', 'changeImage()');
+    like.setAttribute('src',"images/like.png");
 
     
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -51,17 +53,10 @@ function displaytemples(temple) {
     card.append(button);
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('.temples').appendChild(card);
-    
-    if (localStorage.getItem("like") === null){
-        like.setAttribute('src',"images/like.png");
-    }else {
-        if (localStorage.getItem('like') == "images/like.png"){
-            like.setAttribute('src',"images/like.png");
-    } else {
-        like.setAttribute('src',"images/likesolid.png");
-        
-    }
-    }
+    count++;
+ 
+  
+ 
 }
 
 fetch(requestURL)
@@ -69,7 +64,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const temples = jsonObject['temples'];
     temples.forEach(displaytemples);
 });
@@ -77,21 +72,4 @@ fetch(requestURL)
 
 
 
-
-function changeImage(clickelement) {
-   
-    if (clickelement == "images/like.png"){
-        clickelement.img.src = "images/likesolid.png";
-        
-    } else {
-        clickelement.img.src = "images/like.png";
-        
-    }
-  localStorage.setItem("like", `${image.src}`);
-}
-
-// get the stored value in localStorage
-//image.setAttribute(window.localStorage.getItem(image.src));
-
-// store the new number of visits value
 

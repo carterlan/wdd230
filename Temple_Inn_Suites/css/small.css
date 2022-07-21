@@ -222,7 +222,11 @@ input[type=submit] {
     border-radius: 10em;
     max-width: 1300px;
   }
-
+  .like {
+    border-radius: 2em;
+    margin: auto;
+    margin-bottom: 1.5em;
+  }
    /*services Page*/
    #servicespage h1{
     text-align: center;
