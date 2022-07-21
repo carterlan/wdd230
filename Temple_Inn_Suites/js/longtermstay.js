@@ -1,15 +1,8 @@
 let like = localStorage.getItem("like") || 'images.like.png';
 const image =  document.getElementById("like");
 
-
-
-if (like == '') {
 	image.src = "images/like.png";
     localStorage.setItem("like", `${image.src}`);
-} else {
-	image.src = "images/like.png";
-    localStorage.setItem("like", `${image.src}`);
-}
 
 function changeImage() {
     

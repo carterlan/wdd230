@@ -20,8 +20,6 @@ aside {
 }
 main h1 {
     font-size: 2em;
-    margin-left: 7em;
-    margin-right: 7em;
 }
 
 #templeLogo { 
@@ -189,6 +187,10 @@ picture.social {
 #reservation{
     margin-left:1em;
     width: 90%;
+}
+#reservation h1{
+    font-size: 1.7em;
+    text-align: center;
 }
 form input, form label, form select {
     margin-bottom: 1.5em;
