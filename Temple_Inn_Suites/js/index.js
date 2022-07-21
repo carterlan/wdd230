@@ -21,6 +21,6 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
 
-//Hidden date submit for Join page form
+//Hidden date submit for Reservaton page form
 dateTime = document.getElementById("dateTime");
 dateTime = currentDate;

@@ -261,10 +261,12 @@ input[type=submit] {
   }
   #longterm li {
     text-align: left;
-    
-}
+    }
     #longterm img {
         border-radius: 2em;
         padding-bottom: 1em;
     }
-
+    .like {
+        display: block;
+    }
+    

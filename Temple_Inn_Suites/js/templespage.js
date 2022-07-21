@@ -1,6 +1,6 @@
 const requestURL = 'https://raw.githubusercontent.com/carterlan/wdd230/main/Temple_Inn_Suites/temples.json';
 const cards = document.querySelector('.temples');
-
+let count = 0;
 
 function displaytemples(temple) {
     // Create elements to add to the document
@@ -13,6 +13,8 @@ function displaytemples(temple) {
     let closures2023 = document.createElement('p');
     let additional = document.createElement('p');
     let portrait = document.createElement('img');
+    let button = document.createElement('button')
+    let like = document.createElement('img');
   
     // Change the textContent property of the h2 element to contain the temple's full name
     h2.textContent = `${temple.name}`;
@@ -23,13 +25,19 @@ function displaytemples(temple) {
     closures2022.innerHTML = `<b> Closures 2022</b> ${temple.closures2022}`;
     closures2023.innerHTML = `<b> Closures 2023</b> ${temple.closures2023}`;
     additional.innerHTML = `<b>Milestones: ${temple.additional}`;
+    button.setAttribute('class', 'like');
+    like.setAttribute('onClick', 'changeImage()')
+    like.setAttribute('src', 'images/like.png');
+    like.setAttribute('id', `likes`);
+
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temple.src);
     portrait.setAttribute('alt', `Picture of ${temple.name} temple`);
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '96%');
-  
+    
+    button.append(like);
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(portrait);
@@ -39,8 +47,11 @@ function displaytemples(temple) {
     card.append(closures2022);
     card.append(closures2023);
     card.append(additional);
+    card.append(button);
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('.temples').appendChild(card);
+
+    count++;
 }
 
 fetch(requestURL)
