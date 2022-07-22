@@ -3,6 +3,7 @@ const date = document.querySelector('#date');
 const Temp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('#weatherIcon');
 const captionDesc = document.querySelector('#weatherDiscription');
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let count = 0;
 
 // Call API
@@ -28,11 +29,11 @@ async function apiFetch() {
   function  displayResults(weatherData) {
     Temp.innerHTML = `<strong>${weatherData.list[1].main.temp.toFixed(0)}</strong>`;
     const desc = weatherData.list[1].weather[0].description;
-    
+    windSpeed.innerHTML = weatherData.list[1].wind.speed;
 
     //Create uppercase words for the description
-    //const newDesc = desc.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
-    captionDesc.innerHTML = `${desc}<br>`;
+    const newDesc = desc.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
+    captionDesc.innerHTML = `${newDesc}<br>`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[1].weather[0].icon}.png`;
   
@@ -40,19 +41,29 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc);
     
     while (count <= 16) {
-    let card = document.createElement('div');
+    let card = document.createElement('section');
     let day = document.createElement('h1');
     let icon= document.createElement('img');
-    let description = document.createElement('h4');
+    let captionDescs = document.createElement('h4');
     let tempmin = document.createElement('h4');
     let tempmax = document.createElement('h4');
     let weatherAlert = document.createElement('p');
 
-    day.innerHTML = weatherData.list[count].dt_txt;
+    //Create the forecast Dates and the weather icon
+    let days = new Date(`${weatherData.list[count].dt_txt}`);
+    day.innerHTML = weekday[days.getDay()];
     icon.setAttribute('src', `https://openweathermap.org/img/w/${weatherData.list[count].weather[0].icon}.png`);
-    description.innerHTML = weatherData.list[count].weather[0].description;
+
+    //Create Forecast Discriptions
+    let descriptions = weatherData.list[count].weather[0].description;
+    const newDescs = descriptions.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
+    captionDescs.innerHTML = `${newDescs}<br>`;
+
+    //Create the max and min Temp
     tempmin.innerHTML = `<br>Min Temp: ${weatherData.list[count].main.temp_min.toFixed(0)}<br>`;
-    tempmax.innerHTML = `<br>Max Temp:${weatherData.list[count].main.temp_max.toFixed(0)}<br>`;
+    tempmax.innerHTML = `<br>Max Temp: ${weatherData.list[count].main.temp_max.toFixed(0)}<br>`;
+
+    //Create the Weather Alert if there is one
     weatherAlert.innerHTML = `Weather Alert: <br>${weatherData.message}<br>`;
     if (Number(weatherData.message) == 0) {
       weatherAlert.setAttribute('hidden', true);
@@ -62,7 +73,7 @@ async function apiFetch() {
 
     card.appendChild(day);
     card.appendChild(icon);
-    card.appendChild(description);
+    card.appendChild(captionDescs);
     card.appendChild(tempmin);
     card.appendChild(tempmax);
     card.appendChild(weatherAlert);

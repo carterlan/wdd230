@@ -41,10 +41,12 @@
     <aside>
         <div class="weatherWidget">
             <h3>Current Weather</h3>
-            <div><img id="weatherIcon" src="https://openweathermap.org/img/w/02d.png" alt="few clouds"><span id="temp"><strong>94</strong></span><span id="unit">°F</span>
+            <div>
+                <h1>Today</h1>
+                <img id="weatherIcon" src="https://openweathermap.org/img/w/02d.png" alt="few clouds"><span id="temp"><strong>94</strong></span><span id="unit">°F</span>
                 <h4><span id="weatherDiscription">Few Clouds</span></h4>
-                <p><br>Wind Speed: <span id="windSpeed">5.75</span> mph</p>
-                <p><br>Wind Chill: <span id="windChill">N/A</span></p>
+                <p><br>Wind Speed:<br> <span id="windSpeed">5.75</span> mph</p>
+                <p><br><br>Wind Chill:<br> <span id="windChill"></span></p>
             </div>
             <h3>Forecast Weather</h3>
             <div id="weatherID"></div>
@@ -63,10 +65,10 @@
         If you have any questions please give us a call @(801) 400-1010 we are happy to provide you with the answers that you seek. 
         <b>Go to our reservations page to reserve your stay now!</b><br></p>
 
-        <form name="form" method="POST" action="services.html">
+        <form name="form" target="_blank" action="/temples.html">
             <label for="temples">Choose a Temple for your next stay</label>
             <select name="temples" class="templesjson" onchange="this.form.submit();" method="post">
-                <option >Select a temple</option>  
+                <option>Select a temple</option>  
             </select>
         </form>
         <div id="amenties">
@@ -121,4 +123,5 @@
 <script src="js/index.js"></script>
 <script src="js/temples.js"></script>
 <script src="js/weather.js"></script>
+<script src="js/windchill.js"></script>
 </html>
