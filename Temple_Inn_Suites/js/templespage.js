@@ -28,7 +28,7 @@ function displaytemples(temple) {
     closures2023.innerHTML = `<b> Closures 2023</b> ${temple.closures2023}`;
     additional.innerHTML = `<b>Milestones: ${temple.additional}`;
     button.setAttribute('class', 'like');
-    button.setAttribute('id',`like${count}`);
+
    
     like.setAttribute('id', `likes${count}`); 
     like.setAttribute('onclick', 'changeImage()');
