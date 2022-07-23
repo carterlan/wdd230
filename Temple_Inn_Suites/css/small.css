@@ -215,6 +215,14 @@ input[type=submit] {
     border-radius: 2em;
     cursor: pointer;
   }
+#special {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
   /*Temples Page*/
   #templespage{
     text-align: center;
@@ -256,13 +264,28 @@ input[type=submit] {
   #servicespage div ul{
     color:#d9d9d9;
   }
-  #phila {
+  #phila, #wedding {
     border-radius: 2em;
     display: block;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+  }
+  #servicespage h4 {
+    color: #d9d9d9;
+  }
+  #servicespage a {
+    color:#d9d9d9;
+    background-color: #3c6e71;
+    border-radius: 1em;
+    padding: .15em;
+    text-decoration: none;
+  }
+  #servicespage a:hover {
+    background-color: #284b63;  
+    border-radius: 1em;
+
   }
   /*Long Term Stay*/
 

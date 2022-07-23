@@ -45,6 +45,7 @@ async function apiFetch() {
     let day = document.createElement('h1');
     let icon= document.createElement('img');
     let captionDescs = document.createElement('h4');
+    let humid = document.createElement('h4');
     let tempmin = document.createElement('h4');
     let tempmax = document.createElement('h4');
     let weatherAlert = document.createElement('p');
@@ -54,10 +55,11 @@ async function apiFetch() {
     day.innerHTML = weekday[days.getDay()];
     icon.setAttribute('src', `https://openweathermap.org/img/w/${weatherData.list[count].weather[0].icon}.png`);
 
-    //Create Forecast Discriptions
+    //Create Forecast Discriptions and the humidity
     let descriptions = weatherData.list[count].weather[0].description;
     const newDescs = descriptions.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
     captionDescs.innerHTML = `${newDescs}<br>`;
+    humid.innerHTML = `<br> Humidity: ${weatherData.list[count].main.humidity}`;
 
     //Create the max and min Temp
     tempmin.innerHTML = `<br>Min Temp: ${weatherData.list[count].main.temp_min.toFixed(0)}<br>`;
@@ -74,6 +76,7 @@ async function apiFetch() {
     card.appendChild(day);
     card.appendChild(icon);
     card.appendChild(captionDescs);
+    card.appendChild(humid);
     card.appendChild(tempmin);
     card.appendChild(tempmax);
     card.appendChild(weatherAlert);

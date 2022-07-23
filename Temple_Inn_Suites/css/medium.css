@@ -71,7 +71,11 @@
     #templespage{
         display: block;
     }
-
-    /*Term Stay*/
-
+    /*Services*/
+    #titleservice {
+        grid-column: 1 / -1;
+    }
+    #reception {
+        grid-column: 1 / -1;
+    }
 }

@@ -67,13 +67,29 @@
     /*Reservation Page*/
     #reservation {
         font-size: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1em;
     }
+    #reservation img {
+        grid-column: 2;
+        grid-row: -1;
+        margin-top: auto;
+        margin-bottom: 6em;
+    }
+
     
     /*Temples Page*/
    #templespage section {
     display: grid;
     grid-template-columns: 1fr 1fr;
    }
- 
-  
+    /*Services*/
+    #servicespage {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #reception {
+        grid-column: 3;
+    }
+
 }
