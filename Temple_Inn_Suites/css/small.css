@@ -215,6 +215,9 @@ input[type=submit] {
   #templespage{
     text-align: center;
   }
+  .temples {
+    margin-bottom: 1em;
+  }
   .temples p{
     padding: 1em;
     font-size: 1.1em;

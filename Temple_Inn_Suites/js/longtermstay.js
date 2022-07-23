@@ -13,7 +13,7 @@ if (numVisits !== 0) {
 	//visitsDisplay.textContent = ` ${numVisits}`;
     var test = localStorage.getItem('likes');console.log(test);
     like.setAttribute('src',`${test}`);
-    //like3.setAttribute('src',`${test}`);
+    like3.setAttribute('src',`${test}`);
 } else {
 	//visitsDisplay.textContent = `This is your first visit!`;
     test = localStorage.setItem('likes', 'images/like.png');

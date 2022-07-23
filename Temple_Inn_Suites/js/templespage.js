@@ -31,8 +31,8 @@ function displaytemples(temple) {
 
    
     like.setAttribute('id', `likes${count}`); 
-    like.setAttribute('onclick', 'changeImage()');
-    like.setAttribute('src',"images/like.png");
+    like.setAttribute('onclick', `changeImage${count}()`);
+    //like.setAttribute('src',"images/like.png");
 
     
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -60,6 +60,51 @@ function displaytemples(temple) {
  
 }
 
+function likeMachine() {
+  const likes0 = document.getElementById("likes0");
+  const likes1 = document.getElementById("likes1");
+  const likes2 = document.getElementById("likes2");
+  const likes3 = document.getElementById("likes3");
+  //const visitsDisplay = document.querySelector("#numberofvisits");
+  
+  // get the stored value in localStorage
+  let numVisits = Number(window.localStorage.getItem("visits-ls"));
+  
+  // determine if this is the first visit or display the number of visits.
+  if (numVisits !== 0) {
+    //visitsDisplay.textContent = ` ${numVisits}`;
+      var test0 = localStorage.getItem('likes0');
+      var test1 = localStorage.getItem('likes1');
+      var test2 = localStorage.getItem('likes2');
+      var test3 = localStorage.getItem('likes3');
+
+      likes0.setAttribute('src',`${test0}`);
+      likes1.setAttribute('src',`${test1}`);
+      likes2.setAttribute('src',`${test2}`);
+      likes3.setAttribute('src',`${test3}`);
+  } else {
+    //visitsDisplay.textContent = `This is your first visit!`;
+      test0 = localStorage.setItem('likes0', 'images/like.png');
+      test1 = localStorage.setItem('likes1', 'images/like.png');
+      test2 = localStorage.setItem('likes2', 'images/like.png');
+      test3 = localStorage.setItem('likes3', 'images/like.png');
+
+      likes0.setAttribute('src',"images/like.png");
+      likes1.setAttribute('src',"images/like.png");
+      likes2.setAttribute('src',"images/like.png");
+      likes3.setAttribute('src',"images/like.png");
+  }
+  
+  // increment the number of visits.
+  numVisits++;
+  
+  // store the new number of visits value
+  localStorage.setItem("visits-ls", numVisits);
+  
+ 
+  
+  }
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -68,9 +113,60 @@ fetch(requestURL)
     //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const temples = jsonObject['temples'];
     temples.forEach(displaytemples);
+    likeMachine();
 });
 
+ function changeImage0() {
+  
+      test0 = localStorage.getItem('likes0');
+      
+      if ("images/like.png" == test0){
+         likes0.src = "images/likesolid.png";
+         test0 = localStorage.setItem('likes0', 'images/likesolid.png');
+      } else {
+         likes0.src = "images/like.png";
+         test0 = localStorage.setItem('likes0', 'images/like.png');
+      }
 
+   
+  }
+  function changeImage1() {
+    test1 = localStorage.getItem('likes1');
+        if ("images/like.png" == test1){
+        
+          likes1.src = "images/likesolid.png";
+          test1 = localStorage.setItem('likes1', 'images/likesolid.png');
+      } else {
+
+          likes1.src = "images/like.png";
+          test1 = localStorage.setItem('likes1', 'images/like.png');
+      }
+    }
+  function changeImage2() {
+    test2 = localStorage.getItem('likes2');
+        if ("images/like.png" == test2){
+        
+          likes2.src = "images/likesolid.png";
+          test2 = localStorage.setItem('likes2', 'images/likesolid.png');
+      } else {
+
+          likes2.src = "images/like.png";
+          test2 = localStorage.setItem('likes2', 'images/like.png');
+      }
+    }
+  function changeImage3() {
+    test3 = localStorage.getItem('likes3');
+        if ("images/like.png" == test3){
+        
+          likes3.src = "images/likesolid.png";
+          test3 = localStorage.setItem('likes3', 'images/likesolid.png');
+      } else {
+
+          likes3.src = "images/like.png";
+          test3 = localStorage.setItem('likes3', 'images/like.png');
+      }
+ 
+}
 
 
 
