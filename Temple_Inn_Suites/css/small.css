@@ -27,6 +27,8 @@ main h1 {
     border-radius: 2em;
     margin-right: .5em;
     border-style: solid;
+    width: 4sem;
+    height: 4em;
 }
 
 .navigation {
@@ -86,6 +88,7 @@ picture {
 #heroimg {
     margin-top: 1em;
     border-radius: 2em;
+    width: 100%;
 }
 #booknow {
     position: relative;
@@ -163,7 +166,9 @@ picture.social {
     border-style: solid;
     border-width: 2px;
 }
-
+.social img {
+  height: 38px;
+}
 
 #sociallinks, #bottomfooter {
     background-color: transparent;
