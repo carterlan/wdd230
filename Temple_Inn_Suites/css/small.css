@@ -185,8 +185,12 @@ picture.social {
 
 /*Reservation Page*/
 #reservation{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em;
-    width: 90%;
+    width: 86%;
     background-color: #284b63;
     border-radius: 2em;
     color: #d9d9d9;
@@ -252,6 +256,14 @@ input[type=submit] {
   #servicespage div ul{
     color:#d9d9d9;
   }
+  #phila {
+    border-radius: 2em;
+    display: block;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
   /*Long Term Stay*/
 
   #btnSubmit {
@@ -261,6 +273,7 @@ input[type=submit] {
     align-items: center;
   }
   #business {
+    width:80%;
     min-width: 280px;
     min-height: 150px;
   }
