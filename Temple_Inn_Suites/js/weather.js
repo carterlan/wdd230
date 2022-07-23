@@ -59,11 +59,11 @@ async function apiFetch() {
     let descriptions = weatherData.list[count].weather[0].description;
     const newDescs = descriptions.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');
     captionDescs.innerHTML = `${newDescs}<br>`;
-    humid.innerHTML = `<br> Humidity: ${weatherData.list[count].main.humidity}`;
+    humid.innerHTML = `<br> Humidity: ${weatherData.list[count].main.humidity}%`;
 
     //Create the max and min Temp
     tempmin.innerHTML = `<br>Min Temp: ${weatherData.list[count].main.temp_min.toFixed(0)}<br>`;
-    tempmax.innerHTML = `<br>Max Temp: ${weatherData.list[count].main.temp_max.toFixed(0)}<br>`;
+    tempmax.innerHTML = `<br>Max Temp: ${weatherData.list[(count+4)].main.temp_max.toFixed(0)}<br>`;
 
     //Create the Weather Alert if there is one
     weatherAlert.innerHTML = `Weather Alert: <br>${weatherData.message}<br>`;

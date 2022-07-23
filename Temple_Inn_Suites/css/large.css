@@ -37,6 +37,9 @@
     .weatherWidget {
         background-color: #3c6e71;
     }
+    #temp {
+        font-size: 2em;
+    }
     
     .navigation {
         background-color: #3c6e71;
