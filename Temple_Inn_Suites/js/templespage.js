@@ -32,7 +32,7 @@ function displaytemples(temple) {
    
     like.setAttribute('id', `likes${count}`); 
     like.setAttribute('onclick', `changeImage${count}()`);
-    //like.setAttribute('src',"images/like.png");
+    
 
     
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -41,7 +41,9 @@ function displaytemples(temple) {
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '96%');
     
+    //Append lke button
     button.append(like);
+
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(portrait);
@@ -52,6 +54,7 @@ function displaytemples(temple) {
     card.append(closures2023);
     card.append(additional);
     card.append(button);
+
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('.temples').appendChild(card);
     count++;
@@ -65,14 +68,13 @@ function likeMachine() {
   const likes1 = document.getElementById("likes1");
   const likes2 = document.getElementById("likes2");
   const likes3 = document.getElementById("likes3");
-  //const visitsDisplay = document.querySelector("#numberofvisits");
   
   // get the stored value in localStorage
   let numVisits = Number(window.localStorage.getItem("visits-ls"));
   
   // determine if this is the first visit or display the number of visits.
   if (numVisits !== 0) {
-    //visitsDisplay.textContent = ` ${numVisits}`;
+    
       var test0 = localStorage.getItem('likes0');
       var test1 = localStorage.getItem('likes1');
       var test2 = localStorage.getItem('likes2');
@@ -83,7 +85,7 @@ function likeMachine() {
       likes2.setAttribute('src',`${test2}`);
       likes3.setAttribute('src',`${test3}`);
   } else {
-    //visitsDisplay.textContent = `This is your first visit!`;
+    
       test0 = localStorage.setItem('likes0', 'images/like.png');
       test1 = localStorage.setItem('likes1', 'images/like.png');
       test2 = localStorage.setItem('likes2', 'images/like.png');
@@ -110,12 +112,13 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const temples = jsonObject['temples'];
     temples.forEach(displaytemples);
     likeMachine();
 });
 
+
+//Create the individual like buttons clickon function
  function changeImage0() {
   
       test0 = localStorage.getItem('likes0');
